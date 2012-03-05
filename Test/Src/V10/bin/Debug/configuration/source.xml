@@ -1,0 +1,48 @@
+<ProductSourceManager>
+    <ProductSource Enabled="0" ProductId="21" IPAddr="10.100.1.12" Port="6504" UserName=" " Password=" " CodecType="4" Description="CFFE L2 ">
+        <MarketTime BeginTime="85000" EndTime="160000" />
+    </ProductSource>
+    <ProductSource Enabled="0" ProductId="22" IPAddr="10.100.1.12" Port="6501" UserName=" " Password=" " CodecType="4" Description="SHFX L1 ">
+        <MarketTime BeginTime="85000" EndTime="160000" />
+    </ProductSource>    
+    <ProductSource Enabled="0" ProductId="23" IPAddr="10.100.1.12" Port="6502" UserName=" " Password=" " CodecType="4" Description="DCE L1 ">
+        <MarketTime BeginTime="85000" EndTime="160000" />
+    </ProductSource>    
+    <ProductSource Enabled="0" ProductId="24" IPAddr="10.100.1.12" Port="6503" UserName=" " Password=" " CodecType="4" Description="CZCE L1 ">
+        <MarketTime BeginTime="85000" EndTime="160000" />
+    </ProductSource>
+    <ProductSource Enabled="0" ProductId="10" IPAddr="10.100.4.23" Port="6801" UserName=" " Password=" " CodecType="4" Description="SSE L1">
+        <MarketTime BeginTime="85000" EndTime="153000" />
+    </ProductSource>
+    <ProductSource Enabled="0" ProductId="11" IPAddr="10.100.4.23" Port="6802" UserName=" " Password=" " CodecType="4" Description="SZSE L1">
+        <MarketTime BeginTime="85000" EndTime="153000" />
+    </ProductSource>    
+    <ProductSource Enabled="0" ProductId="12" IPAddr="10.100.8.52" Port="8701" UserName=" " Password=" " CodecType="4" Description="SSE L2 ">
+        <MarketTime BeginTime="83000" EndTime="153000" />
+    </ProductSource>
+		<ProductSource Enabled="0" ProductId="13" IPAddr="10.100.1.12" Port="6702" UserName=" " Password=" " CodecType="4" Description="SZSE L2">
+        <MarketTime BeginTime="83000" EndTime="153000" />
+    </ProductSource>    
+    <ProductSource Enabled="0" ProductId="12" IPAddr="10.100.2.83" Port="1808" UserName=" " Password=" " CodecType="4" Description="SSE L2">
+        <MarketTime BeginTime="83000" EndTime="153000" />
+    </ProductSource>
+     <ProductSource Enabled="0" ProductId="13" IPAddr="10.100.2.83" Port="6702" UserName=" " Password=" " CodecType="4" Description="SZSE L2">
+        <MarketTime BeginTime="83000" EndTime="153000" />
+    </ProductSource>
+    <ProductSource Enabled="0" ProductId="2010" IPAddr="127.0.0.1" Port="0" UserName=" " Password=" " CodecType="0" Description="simulator" />
+    <ProductSource Enabled="1" ProductId="2011" IPAddr="10.100.3.4" Port="6858" UserName="admin" Password="admin" CodecType="0" Description="Relay ">
+        <ProtocolDescription ProductId="10" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="11" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="12" Major="1" Minor="0" Codec="1" />
+        <ProtocolDescription ProductId="13" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="20" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="21" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="22" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="23" Major="1" Minor="0" Codec="1" />
+		<ProtocolDescription ProductId="24" Major="1" Minor="0" Codec="1" />
+    </ProductSource>
+    <!--    Ô­Ê¼Á÷ -->
+    <ProductSource Enabled="0" ProductId="12" IPAddr="10.100.2.83" Port="9129" UserName=" " Password=" " CodecType="3" Description="SSE L2 ">
+        <MarketTime BeginTime="85000" EndTime="183000" />
+    </ProductSource>
+</ProductSourceManager>

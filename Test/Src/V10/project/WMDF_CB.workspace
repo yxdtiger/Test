@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="WMDF_CB">
+		<Project filename="WMDFServer.cbp" />
+		<Project filename="WMDFAPI.cbp" />
+		<Project filename="NetModule.cbp" />
+		<Project filename="WMDFStudio.cbp" />
+		<Project filename="WMDFAdapter.cbp" active="1" />
+	</Workspace>
+</CodeBlocks_workspace_file>

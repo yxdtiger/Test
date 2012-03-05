@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release_x64" />
+	<File name="../../lib/netmodule/client.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1131" topLine="43" />
+	</File>
+	<File name="../../lib/netmodule/client.h" open="0" top="0" tabpos="0">
+		<Cursor position="1320" topLine="17" />
+	</File>
+	<File name="../../lib/netmodule/client_impl.cpp" open="1" top="0" tabpos="0">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../../lib/netmodule/connection.h" open="0" top="0" tabpos="0">
+		<Cursor position="4191" topLine="111" />
+	</File>
+	<File name="../../lib/netmodule/error.h" open="0" top="0" tabpos="0">
+		<Cursor position="426" topLine="3" />
+	</File>
+	<File name="../../lib/netmodule/event_factory.h" open="0" top="0" tabpos="0">
+		<Cursor position="511" topLine="1" />
+	</File>
+	<File name="../../lib/netmodule/message_factory.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1394" topLine="42" />
+	</File>
+	<File name="../../lib/netmodule/message_factory.h" open="0" top="0" tabpos="0">
+		<Cursor position="720" topLine="15" />
+	</File>
+	<File name="../../lib/netmodule/message_id_def.h" open="0" top="0" tabpos="0">
+		<Cursor position="106" topLine="0" />
+	</File>
+	<File name="../../lib/netmodule/net_module.h" open="0" top="0" tabpos="0">
+		<Cursor position="4192" topLine="125" />
+	</File>
+	<File name="../../lib/netmodule/relay_connection.h" open="0" top="0" tabpos="0">
+		<Cursor position="641" topLine="8" />
+	</File>
+	<File name="../../lib/netmodule/server.h" open="0" top="0" tabpos="0">
+		<Cursor position="1265" topLine="23" />
+	</File>
+	<File name="../../lib/netmodule/server_impl.h" open="0" top="0" tabpos="0">
+		<Cursor position="3604" topLine="94" />
+	</File>
+	<File name="../../lib/netmodule/service.h" open="0" top="0" tabpos="0">
+		<Cursor position="539" topLine="0" />
+	</File>
+	<File name="../../lib/serialization/clonable.h" open="0" top="0" tabpos="0">
+		<Cursor position="436" topLine="5" />
+	</File>
+	<File name="../../lib/serialization/memento.cpp" open="1" top="0" tabpos="0">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../../lib/serialization/memento_reader.h" open="0" top="0" tabpos="0">
+		<Cursor position="688" topLine="12" />
+	</File>
+	<File name="../../lib/serialization/memento_writer.h" open="0" top="0" tabpos="0">
+		<Cursor position="819" topLine="17" />
+	</File>
+	<File name="../../lib/serialization/serializer.h" open="0" top="0" tabpos="0">
+		<Cursor position="1352" topLine="44" />
+	</File>
+	<File name="../../lib/zlib/include/zconf.h" open="0" top="0" tabpos="0">
+		<Cursor position="10017" topLine="279" />
+	</File>
+	<File name="../src/adapter/WMDFAdapter.cpp" open="1" top="0" tabpos="41">
+		<Cursor position="523" topLine="0" />
+	</File>
+	<File name="../src/commandline/adapter_command.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="4120" topLine="89" />
+	</File>
+	<File name="../src/commandline/console_command_group.h" open="0" top="0" tabpos="0">
+		<Cursor position="613" topLine="8" />
+	</File>
+	<File name="../src/commandline/console_command_manager.h" open="0" top="0" tabpos="0">
+		<Cursor position="888" topLine="17" />
+	</File>
+	<File name="../src/commandline/console_command_parser.h" open="0" top="0" tabpos="0">
+		<Cursor position="426" topLine="1" />
+	</File>
+	<File name="../src/commandline/console_command_printer.h" open="0" top="0" tabpos="0">
+		<Cursor position="466" topLine="7" />
+	</File>
+	<File name="../src/commandline/console_command_processor.h" open="0" top="0" tabpos="0">
+		<Cursor position="647" topLine="9" />
+	</File>
+	<File name="../src/commandline/freplay_command.cpp" open="1" top="0" tabpos="0">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/commandline/help_command.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="788" topLine="11" />
+	</File>
+	<File name="../src/commandline/logger_command.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1734" topLine="42" />
+	</File>
+	<File name="../src/commandline/net_command.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3943" topLine="83" />
+	</File>
+	<File name="../src/commandline/replay_command.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="820" topLine="17" />
+	</File>
+	<File name="../src/commandline/system_console_command_factory.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3364" topLine="71" />
+	</File>
+	<File name="../src/commandline/system_console_command_factory.h" open="0" top="0" tabpos="0">
+		<Cursor position="637" topLine="4" />
+	</File>
+	<File name="../src/commandline/user_command.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3680" topLine="82" />
+	</File>
+	<File name="../src/environment/application_directory.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2241" topLine="70" />
+	</File>
+	<File name="../src/environment/data_reader.h" open="0" top="0" tabpos="0">
+		<Cursor position="1224" topLine="32" />
+	</File>
+	<File name="../src/environment/data_writer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1657" topLine="64" />
+	</File>
+	<File name="../src/environment/data_writer.h" open="0" top="0" tabpos="0">
+		<Cursor position="1592" topLine="30" />
+	</File>
+	<File name="../src/environment/directory.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1499" topLine="43" />
+	</File>
+	<File name="../src/environment/file_seek.h" open="0" top="0" tabpos="0">
+		<Cursor position="1190" topLine="29" />
+	</File>
+	<File name="../src/environment/security_utils.h" open="1" top="0" tabpos="28">
+		<Cursor position="133" topLine="0" />
+	</File>
+	<File name="../src/environment/server_environment.h" open="0" top="0" tabpos="0">
+		<Cursor position="2050" topLine="38" />
+	</File>
+	<File name="../src/environment/system_config.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3137" topLine="84" />
+	</File>
+	<File name="../src/environment/unrar.h" open="1" top="0" tabpos="39">
+		<Cursor position="939" topLine="0" />
+	</File>
+	<File name="../src/environment/unrar_utils.cpp" open="1" top="0" tabpos="40">
+		<Cursor position="758" topLine="0" />
+	</File>
+	<File name="../src/environment/utils.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5706" topLine="209" />
+	</File>
+	<File name="../src/environment/utils.h" open="1" top="0" tabpos="0">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/environment/wmdf_file.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1301" topLine="63" />
+	</File>
+	<File name="../src/environment/wmdf_file.h" open="0" top="0" tabpos="0">
+		<Cursor position="1919" topLine="61" />
+	</File>
+	<File name="../src/include/time.h" open="0" top="0" tabpos="0">
+		<Cursor position="10416" topLine="141" />
+	</File>
+	<File name="../src/include/wmdf_api.h" open="0" top="0" tabpos="0">
+		<Cursor position="17742" topLine="347" />
+	</File>
+	<File name="../src/include/wmdf_structs.h" open="0" top="0" tabpos="0">
+		<Cursor position="21511" topLine="410" />
+	</File>
+	<File name="../src/monitor/monitor_adapter.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1617" topLine="40" />
+	</File>
+	<File name="../src/monitor/monitor_event_collector.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2537" topLine="56" />
+	</File>
+	<File name="../src/monitor/monitor_state.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1040" topLine="25" />
+	</File>
+	<File name="../src/monitor/transfer_status_collector.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="8146" topLine="183" />
+	</File>
+	<File name="../src/product/adapter/adapter_guard.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2836" topLine="88" />
+	</File>
+	<File name="../src/product/adapter/cffe_adapter.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="10956" topLine="244" />
+	</File>
+	<File name="../src/product/adapter/cffe_adapter.h" open="1" top="0" tabpos="2">
+		<Cursor position="3451" topLine="68" />
+	</File>
+	<File name="../src/product/adapter/ciq/ciq_file.cpp" open="1" top="0" tabpos="84">
+		<Cursor position="1770" topLine="92" />
+	</File>
+	<File name="../src/product/adapter/ciq/ciq_file.h" open="1" top="0" tabpos="83">
+		<Cursor position="904" topLine="19" />
+	</File>
+	<File name="../src/product/adapter/common/fast_decoder.h" open="1" top="0" tabpos="43">
+		<Cursor position="10458" topLine="410" />
+	</File>
+	<File name="../src/product/adapter/common/fast_template.h" open="1" top="0" tabpos="44">
+		<Cursor position="459" topLine="4" />
+	</File>
+	<File name="../src/product/adapter/common/fast_template_decoder.h" open="1" top="0" tabpos="29">
+		<Cursor position="187" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/common/rawdata_adapter_factory.h" open="1" top="0" tabpos="46">
+		<Cursor position="510" topLine="3" />
+	</File>
+	<File name="../src/product/adapter/common/rawdata_object.h" open="0" top="0" tabpos="0">
+		<Cursor position="137" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/common/step_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="83" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/common/step_template.h" open="1" top="0" tabpos="37">
+		<Cursor position="180" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/common/step_template_decoder.h" open="1" top="0" tabpos="52">
+		<Cursor position="1044" topLine="14" />
+	</File>
+	<File name="../src/product/adapter/czce_adapter.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="4846" topLine="115" />
+	</File>
+	<File name="../src/product/adapter/czce_adapter.h" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/dbf.c" open="1" top="0" tabpos="82">
+		<Cursor position="11649" topLine="450" />
+	</File>
+	<File name="../src/product/adapter/dce_adapter.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="4125" topLine="112" />
+	</File>
+	<File name="../src/product/adapter/dce_adapter.h" open="1" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/fx_adapter.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="211" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/fx_adapter.h" open="1" top="0" tabpos="8">
+		<Cursor position="1505" topLine="41" />
+	</File>
+	<File name="../src/product/adapter/product_adapter.h" open="0" top="0" tabpos="0">
+		<Cursor position="1022" topLine="14" />
+	</File>
+	<File name="../src/product/adapter/shfe_adapter.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="269" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/shfe_adapter.h" open="1" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_indexdata_1113_template.h" open="1" top="0" tabpos="64">
+		<Cursor position="426" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_indexdata_3113_template.h" open="1" top="0" tabpos="59">
+		<Cursor position="429" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_indexdata_3113_v30_template.h" open="1" top="0" tabpos="69">
+		<Cursor position="449" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_marketdata_1102_template.h" open="1" top="0" tabpos="68">
+		<Cursor position="434" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_marketdata_3102_template.h" open="1" top="0" tabpos="60">
+		<Cursor position="433" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_marketdata_3202_template.h" open="1" top="0" tabpos="70">
+		<Cursor position="433" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_orderqueue_1111_template.h" open="1" top="0" tabpos="66">
+		<Cursor position="433" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_orderqueue_3111_template.h" open="1" top="0" tabpos="61">
+		<Cursor position="431" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_rawdata_adapter.cpp" open="1" top="0" tabpos="50">
+		<Cursor position="3935" topLine="117" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_rawdata_adapter.h" open="1" top="0" tabpos="45">
+		<Cursor position="716" topLine="8" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_rawdata_converter.cpp" open="1" top="0" tabpos="58">
+		<Cursor position="19691" topLine="455" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_rawdata_converter.h" open="1" top="0" tabpos="54">
+		<Cursor position="1085" topLine="11" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_template_decoder.h" open="1" top="0" tabpos="53">
+		<Cursor position="1077" topLine="16" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_transaction_1101_template.h" open="1" top="0" tabpos="67">
+		<Cursor position="438" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_transaction_3101_template.h" open="1" top="0" tabpos="63">
+		<Cursor position="421" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_transaction_3201_template.h" open="1" top="0" tabpos="71">
+		<Cursor position="438" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_virtualauctionprice_1107_template.h" open="1" top="0" tabpos="65">
+		<Cursor position="478" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_fast_virtualauctionprice_3107_template.h" open="1" top="0" tabpos="62">
+		<Cursor position="478" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_fast/sse_marketdata_3202_merger.cpp" open="1" top="0" tabpos="30">
+		<Cursor position="1789" topLine="42" />
+	</File>
+	<File name="../src/product/adapter/sse_step/sse_step_marketdata_template.h" open="1" top="0" tabpos="73">
+		<Cursor position="378" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_step/sse_step_rawdata_adapter.h" open="1" top="0" tabpos="47">
+		<Cursor position="880" topLine="16" />
+	</File>
+	<File name="../src/product/adapter/sse_step/sse_step_rawdata_converter.cpp" open="1" top="0" tabpos="31">
+		<Cursor position="158" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/sse_step/sse_step_rawdata_converter.h" open="1" top="0" tabpos="51">
+		<Cursor position="1764" topLine="37" />
+	</File>
+	<File name="../src/product/adapter/sse_step/sse_step_template_decoder.cpp" open="1" top="0" tabpos="76">
+		<Cursor position="3223" topLine="85" />
+	</File>
+	<File name="../src/product/adapter/sse_step/sse_step_template_decoder.h" open="1" top="0" tabpos="72">
+		<Cursor position="929" topLine="13" />
+	</File>
+	<File name="../src/product/adapter/swzs_adapter.cpp" open="1" top="0" tabpos="85">
+		<Cursor position="1072" topLine="22" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/fast_szse_index_template.h" open="1" top="0" tabpos="74">
+		<Cursor position="578" topLine="1" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/fast_szse_orders_template.h" open="1" top="0" tabpos="75">
+		<Cursor position="494" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/fast_szse_snapshot_template.h" open="1" top="0" tabpos="77">
+		<Cursor position="561" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/fast_szse_stockinfo_template.h" open="1" top="0" tabpos="78">
+		<Cursor position="508" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/fast_szse_trade_template.h" open="1" top="0" tabpos="79">
+		<Cursor position="488" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/szse_fast_rawdata_adapter.h" open="1" top="0" tabpos="49">
+		<Cursor position="708" topLine="8" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/szse_fast_rawdata_converter.h" open="1" top="0" tabpos="32">
+		<Cursor position="194" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/szse_fast_template_decoder.cpp" open="1" top="0" tabpos="80">
+		<Cursor position="2763" topLine="61" />
+	</File>
+	<File name="../src/product/adapter/szse_fast/szse_fast_template_decoder.h" open="1" top="0" tabpos="55">
+		<Cursor position="910" topLine="11" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_indexdata_template.cpp" open="1" top="0" tabpos="33">
+		<Cursor position="26" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_indexdata_template.h" open="1" top="0" tabpos="34">
+		<Cursor position="137" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_marketdata_template.cpp" open="1" top="0" tabpos="35">
+		<Cursor position="34" topLine="0" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_marketdata_template.h" open="1" top="0" tabpos="36">
+		<Cursor position="857" topLine="9" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_rawdata_adapter.h" open="1" top="0" tabpos="48">
+		<Cursor position="882" topLine="15" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_rawdata_converter.h" open="1" top="0" tabpos="56">
+		<Cursor position="1917" topLine="47" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_template_decoder.cpp" open="1" top="0" tabpos="81">
+		<Cursor position="2917" topLine="72" />
+	</File>
+	<File name="../src/product/adapter/szse_step/szse_step_template_decoder.h" open="1" top="0" tabpos="57">
+		<Cursor position="818" topLine="12" />
+	</File>
+	<File name="../src/product/daily_rawdata_file.cpp" open="1" top="0" tabpos="38">
+		<Cursor position="1825" topLine="53" />
+	</File>
+	<File name="../src/product/daily_rawdata_file.h" open="1" top="0" tabpos="42">
+		<Cursor position="894" topLine="17" />
+	</File>
+	<File name="../src/product/decoder/dataDecoder.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/dataDecoder.h" open="1" top="0" tabpos="12">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/indexBase.cpp" open="1" top="0" tabpos="13">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/indexBase.h" open="1" top="0" tabpos="14">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/indicatorDefs.h" open="1" top="0" tabpos="15">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/packetDecoder.cpp" open="1" top="0" tabpos="16">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/packetDecoder.h" open="1" top="0" tabpos="17">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/securityContainer.cpp" open="1" top="0" tabpos="18">
+		<Cursor position="213" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/securityContainer.h" open="1" top="0" tabpos="19">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/securityIndex.cpp" open="1" top="0" tabpos="20">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/securityIndex.h" open="1" top="0" tabpos="21">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/utilsString.cpp" open="1" top="0" tabpos="22">
+		<Cursor position="67" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/utilsString.h" open="1" top="0" tabpos="23">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/decoder/windCodeCodec.cpp" open="1" top="0" tabpos="24">
+		<Cursor position="10847" topLine="280" />
+	</File>
+	<File name="../src/product/decoder/windCodeCodec.h" open="1" top="0" tabpos="25">
+		<Cursor position="757" topLine="21" />
+	</File>
+	<File name="../src/product/feed_product_replayer.cpp" open="0" top="0" tabpos="39">
+		<Cursor position="5536" topLine="213" />
+	</File>
+	<File name="../src/product/feed_product_replayer.h" open="0" top="0" tabpos="40">
+		<Cursor position="1597" topLine="0" />
+	</File>
+	<File name="../src/product/message_descripter.h" open="0" top="0" tabpos="0">
+		<Cursor position="849" topLine="15" />
+	</File>
+	<File name="../src/product/product_adapter_factory.cpp" open="1" top="0" tabpos="26">
+		<Cursor position="1323" topLine="14" />
+	</File>
+	<File name="../src/product/product_adapter_factory.h" open="1" top="0" tabpos="27">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/product/version_descripter.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1343" topLine="33" />
+	</File>
+	<File name="../src/protocol/binary_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="689" topLine="13" />
+	</File>
+	<File name="../src/protocol/binary_codec_1_1_shl2_market_data.cpp" open="0" top="0" tabpos="31">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_codec_1_1_shl2_market_data.h" open="0" top="0" tabpos="32">
+		<Cursor position="494" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_codec_index_market_data.cpp" open="0" top="0" tabpos="33">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_codec_index_market_data.h" open="0" top="0" tabpos="34">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_codec_shl2_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="471" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_codec_shl2_order_queue.h" open="0" top="0" tabpos="0">
+		<Cursor position="531" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_codec_shl2_trans.h" open="0" top="0" tabpos="0">
+		<Cursor position="434" topLine="0" />
+	</File>
+	<File name="../src/protocol/binary_message_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="825" topLine="18" />
+	</File>
+	<File name="../src/protocol/codec_buffer.h" open="0" top="0" tabpos="0">
+		<Cursor position="663" topLine="13" />
+	</File>
+	<File name="../src/protocol/fast_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="9902" topLine="450" />
+	</File>
+	<File name="../src/protocol/fast_codec_1_1_shl2_market_data.h" open="0" top="0" tabpos="35">
+		<Cursor position="598" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_1_1_szl2_market_data.cpp" open="0" top="0" tabpos="29">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="../src/protocol/fast_codec_1_1_szl2_market_data.h" open="0" top="0" tabpos="30">
+		<Cursor position="609" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_cffel2_1_1_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="609" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_cffel2_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="582" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_futurel1_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="584" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_index_market_data.h" open="0" top="0" tabpos="36">
+		<Cursor position="566" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_shl2_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="571" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_shl2_order_queue.h" open="0" top="0" tabpos="0">
+		<Cursor position="880" topLine="14" />
+	</File>
+	<File name="../src/protocol/fast_codec_shl2_trans.h" open="0" top="0" tabpos="0">
+		<Cursor position="471" topLine="1" />
+	</File>
+	<File name="../src/protocol/fast_codec_shszl1_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="582" topLine="2" />
+	</File>
+	<File name="../src/protocol/fast_codec_szl2_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="582" topLine="3" />
+	</File>
+	<File name="../src/protocol/fast_codec_szl2_trans.h" open="0" top="0" tabpos="0">
+		<Cursor position="534" topLine="1" />
+	</File>
+	<File name="../src/protocol/fast_message_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="729" topLine="11" />
+	</File>
+	<File name="../src/protocol/mdf_message.h" open="0" top="0" tabpos="0">
+		<Cursor position="2638" topLine="43" />
+	</File>
+	<File name="../src/protocol/message_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="521" topLine="8" />
+	</File>
+	<File name="../src/protocol/protocol_processor_factory.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6103" topLine="180" />
+	</File>
+	<File name="../src/protocol/protocol_processor_factory.h" open="0" top="0" tabpos="0">
+		<Cursor position="3482" topLine="59" />
+	</File>
+	<File name="../src/session/feed_client.h" open="0" top="0" tabpos="0">
+		<Cursor position="1580" topLine="37" />
+	</File>
+	<File name="../src/usermanager/authorized_product.h" open="0" top="0" tabpos="0">
+		<Cursor position="872" topLine="14" />
+	</File>
+	<File name="../src/usermanager/user.h" open="0" top="0" tabpos="0">
+		<Cursor position="2458" topLine="51" />
+	</File>
+	<File name="../src/usermanager/user_manager.h" open="0" top="0" tabpos="0">
+		<Cursor position="888" topLine="20" />
+	</File>
+</CodeBlocks_layout_file>

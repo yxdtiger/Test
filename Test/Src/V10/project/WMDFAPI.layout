@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release_x64" />
+	<File name="../../lib/netmodule/atomic_ptr.h" open="0" top="0" tabpos="0">
+		<Cursor position="511" topLine="6" />
+	</File>
+	<File name="../../lib/netmodule/client_impl.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="368" topLine="1" />
+	</File>
+	<File name="../../lib/serialization/memento.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2525" topLine="124" />
+	</File>
+	<File name="../src/api/api_factory.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="4576" topLine="80" />
+	</File>
+	<File name="../src/api/wmdf_api.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="4499" topLine="124" />
+	</File>
+	<File name="../src/environment/data_reader.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="16" topLine="0" />
+	</File>
+	<File name="../src/environment/data_reader.h" open="0" top="0" tabpos="0">
+		<Cursor position="401" topLine="0" />
+	</File>
+	<File name="../src/environment/file_seek.h" open="0" top="0" tabpos="0">
+		<Cursor position="588" topLine="0" />
+	</File>
+	<File name="../src/environment/utils.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1646" topLine="62" />
+	</File>
+	<File name="../src/environment/utils.h" open="0" top="0" tabpos="0">
+		<Cursor position="3501" topLine="93" />
+	</File>
+	<File name="../src/environment/wmdf_file.h" open="0" top="0" tabpos="0">
+		<Cursor position="535" topLine="0" />
+	</File>
+	<File name="../src/include/date_time.h" open="0" top="0" tabpos="0">
+		<Cursor position="1669" topLine="39" />
+	</File>
+	<File name="../src/include/wmdf_api.h" open="0" top="0" tabpos="0">
+		<Cursor position="12752" topLine="21" />
+	</File>
+	<File name="../src/monitor/logger.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="296" topLine="0" />
+	</File>
+	<File name="../src/product/message_descripter.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="661" topLine="7" />
+	</File>
+	<File name="../src/product/product_descripter.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2809" topLine="94" />
+	</File>
+	<File name="../src/product/product_manager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2099" topLine="75" />
+	</File>
+	<File name="../src/product/product_source.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="7861" topLine="282" />
+	</File>
+	<File name="../src/product/product_source.h" open="0" top="0" tabpos="0">
+		<Cursor position="92" topLine="0" />
+	</File>
+	<File name="../src/product/version_descripter.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3396" topLine="117" />
+	</File>
+	<File name="../src/protocol/codec_buffer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="1856" topLine="79" />
+	</File>
+	<File name="../src/protocol/fast_codec.h" open="0" top="0" tabpos="0">
+		<Cursor position="16075" topLine="748" />
+	</File>
+	<File name="../src/protocol/fast_codec_cffel1_market_data.h" open="0" top="0" tabpos="0">
+		<Cursor position="565" topLine="2" />
+	</File>
+	<File name="../src/session/feed_client.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="213" topLine="0" />
+	</File>
+	<File name="../src/session/feed_connection.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="3439" topLine="118" />
+	</File>
+</CodeBlocks_layout_file>

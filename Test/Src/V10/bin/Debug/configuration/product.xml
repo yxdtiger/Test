@@ -1,0 +1,68 @@
+<ProductManager>
+    <ProductDescripter ProductID="1" ProductName="System" Supplier="wind" Description="System Message">
+        <VersionDescription major="1" minor="0" SupportCodec0="2">
+            <support_messages message_id="1" message_description="heart beat" />
+            <support_messages message_id="2" message_description="login request" />
+            <support_messages message_id="3" message_description="login response" />
+            <support_messages message_id="4" message_description="logout" />
+        </VersionDescription>
+    </ProductDescripter>
+	<ProductDescripter ProductID="2" ProductName="Monitor" Supplier="wind" Description="Monitor Message">
+        <VersionDescription major="1" minor="0" SupportCodec0="2">
+            <support_messages message_id="1" message_description="transfer data stat" />
+            <support_messages message_id="2" message_description="client status" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="10" ProductName="SSE L1" Supplier="wind" Description="SSE L1">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="11" ProductName="SZSE L1" Supplier="wind" Description="SZSE L1">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>    
+    <ProductDescripter ProductID="12" ProductName="SSE L2" Supplier="wind" Description="SSE L2">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+            <support_messages message_id="2" message_description="transaction" />
+            <support_messages message_id="3" message_description="order queue" />
+            <support_messages message_id="4" message_description="overview" />
+            <support_messages message_id="5" message_description="virtual auction price" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="13" ProductName="SZSE L2" Supplier="wind" Description="SZSE L2">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+            <support_messages message_id="2" message_description="transaction" />
+            <support_messages message_id="3" message_description="order queue" />
+            <support_messages message_id="4" message_description="single order" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="20" ProductName="CFFE L1" Supplier="wind" Description="CFFE L1">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="21" ProductName="CFFE L2" Supplier="sse" Description="CFFE L2">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="22" ProductName="SHFE L1" Supplier="sse" Description="SHFE L1">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="23" ProductName="DCE L1" Supplier="sse" Description="DCE L1">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>
+    <ProductDescripter ProductID="24" ProductName="CZCE L1" Supplier="sse" Description="CZCE L1">
+        <VersionDescription major="1" minor="0" SupportCodec0="1" SupportCodec1="2">
+            <support_messages message_id="1" message_description="market data" />
+        </VersionDescription>
+    </ProductDescripter>
+</ProductManager>

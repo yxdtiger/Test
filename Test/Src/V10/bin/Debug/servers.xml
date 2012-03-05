@@ -1,0 +1,4 @@
+<Servers>
+    <ServerInfo IP="10.100.3.198" Port="6960" />
+    <ServerInfo IP="10.100.3.198" Port="6961" />
+</Servers>

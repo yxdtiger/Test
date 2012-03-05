@@ -1,0 +1,314 @@
+﻿生成启动时间为 2011/9/28 23:33:18。
+     1>项目“E:\学习\WMDF\Src\V10\project\WMDFAdapter.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“..\bin\Debug\Obj\WMDFAdapter.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"..\..\lib\boost\include\boost-1_46" /I..\..\lib\serialization /I..\..\lib\tinyxml /I..\..\lib\netmodule /I..\..\lib\zlib\include /I..\..\lib\feedhandler\sse\ia32\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\bin\Debug\Obj\\" /Fd"..\bin\Debug\Obj\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\adapter\stdafx.cpp ..\src\adapter\WMDFAdapter.cpp ..\src\product\feed_product_replayer.cpp ..\src\product\message_descripter.cpp ..\src\product\product_adapter_factory.cpp ..\src\product\product_descripter.cpp ..\src\product\product_manager.cpp ..\src\product\product_source.cpp ..\src\product\product_source_manager.cpp ..\src\product\rawdata_product_replayer.cpp ..\src\product\replay_adapter.cpp ..\src\product\version_descripter.cpp ..\src\product\adapter\cffe_adapter.cpp ..\src\product\adapter\czce_adapter.cpp ..\src\product\adapter\shfe_adapter.cpp ..\src\product\adapter\dce_adapter.cpp ..\src\product\adapter\fx_adapter.cpp ..\src\product\adapter\relay_adapter.cpp ..\src\product\adapter\simulator_adapter.cpp ..\src\product\adapter\sseszse_adapter.cpp ..\src\product\adapter\ssel1_adapter.cpp ..\src\product\adapter\ssel2_adapter.cpp ..\src\product\adapter\szsel1_adapter.cpp ..\src\product\adapter\szsel2_adapter.cpp ..\src\product\adapter\rawdata_adapter.cpp ..\src\product\adapter\rawdata_manager.cpp ..\src\product\adapter\rawdata_ssel2_adapter.cpp ..\src\product\adapter\adapter_guard.cpp ..\src\product\adapter\iproduct_adapter.cpp ..\src\product\adapter\product_adapter.cpp ..\src\product\decoder\dataDecoder.cpp ..\src\product\decoder\index_transfer.cpp ..\src\product\decoder\indexBase.cpp ..\src\product\decoder\l2marketsnapshotcontainer.cpp ..\src\product\decoder\l2marketsnapshotsender.cpp ..\src\product\decoder\packetDecoder.cpp ..\src\product\decoder\securityContainer.cpp ..\src\product\decoder\securityIndex.cpp ..\src\product\decoder\utilsString.cpp ..\src\product\decoder\windCodeCodec.cpp ..\src\environment\application_directory.cpp ..\src\environment\data_reader.cpp ..\src\environment\data_writer.cpp ..\src\environment\directory.cpp ..\src\environment\file.cpp ..\src\environment\file_seek.cpp ..\src\environment\server_environment.cpp ..\src\environment\strutils.cpp ..\src\environment\system_config.cpp ..\src\environment\utils.cpp ..\src\environment\wmdf_file.cpp ..\src\commandline\console_command.cpp ..\src\commandline\console_command_group.cpp ..\src\commandline\console_command_manager.cpp ..\src\commandline\console_command_parser.cpp ..\src\commandline\console_command_printer.cpp ..\src\commandline\console_command_processor.cpp ..\src\commandline\system_console_command_factory.cpp ..\src\commandline\test_command.cpp ..\src\commandline\help_command.cpp ..\src\commandline\logger_command.cpp ..\src\commandline\monitor_command.cpp ..\src\commandline\net_command.cpp ..\src\commandline\replay_command.cpp ..\src\commandline\user_command.cpp ..\src\monitor\client_status_collector.cpp ..\src\monitor\event_listener.cpp ..\src\monitor\event_pool.cpp ..\src\monitor\feed_event.cpp ..\src\monitor\logger.cpp ..\src\monitor\monitor_adapter.cpp ..\src\monitor\monitor_state.cpp ..\src\monitor\product_adapter_listener.cpp ..\src\monitor\productdata_logger.cpp ..\src\monitor\transfer_status_collector.cpp ..\src\protocol\binary_codec.cpp ..\src\protocol\codec_buffer.cpp ..\src\protocol\fast_message_codec.cpp ..\src\protocol\market_header_codec.cpp ..\src\protocol\mdf_message.cpp ..\src\protocol\protocol_description.cpp ..\src\protocol\protocol_processor.cpp ..\src\protocol\protocol_processor_center.cpp ..\src\protocol\protocol_processor_controller.cpp ..\src\protocol\protocol_processor_factory.cpp ..\src\protocol\binary_codec_heart_beat.cpp ..\src\protocol\binary_codec_login_request.cpp ..\src\protocol\binary_codec_login_response.cpp ..\src\protocol\binary_codec_logout.cpp ..\src\protocol\system_header_codec.cpp ..\src\protocol\binary_codec_shl2_auction_price.cpp ..\src\protocol\binary_codec_shl2_market_data.cpp ..\src\protocol\binary_codec_shl2_order_queue.cpp ..\src\protocol\binary_codec_shl2_overview.cpp ..\src\protocol\binary_codec_shl2_trans.cpp ..\src\protocol\fast_codec_shl2_auction_price.cpp ..\src\protocol\fast_codec_shl2_market_data.cpp ..\src\protocol\fast_codec_shl2_order_queue.cpp ..\src\protocol\fast_codec_shl2_overview.cpp ..\src\protocol\fast_codec_shl2_trans.cpp ..\src\protocol\binary_codec_szl2_orders.cpp ..\src\protocol\fast_codec_szl2_market_data.cpp ..\src\protocol\fast_codec_szl2_orders.cpp ..\src\protocol\fast_codec_szl2_trans.cpp ..\src\protocol\stop_bit_codec_szl2_market_data.cpp ..\src\protocol\stop_bit_codec_szl2_order_queue.cpp ..\src\protocol\stop_bit_codec_szl2_orders.cpp ..\src\protocol\stop_bit_codec_szl2_trans.cpp ..\src\protocol\binary_codec_cffel1_market_data.cpp ..\src\protocol\binary_codec_cffel2_market_data.cpp ..\src\protocol\fast_codec_cffel1_market_data.cpp ..\src\protocol\fast_codec_cffel2_market_data.cpp ..\src\protocol\binary_codec_shszl1_market_data.cpp ..\src\protocol\fast_codec_shszl1_market_data.cpp ..\src\protocol\binary_codec_client_status.cpp ..\src\protocol\binary_codec_transfer_stat.cpp ..\src\protocol\monitor_header_codec.cpp ..\src\protocol\fast_codec_dcel1_market_data.cpp ..\src\protocol\fast_codec_shfel1_market_data.cpp ..\src\protocol\fast_codec_czcel1_market_data.cpp ..\..\lib\serialization\clonable.cpp ..\..\lib\serialization\memento.cpp ..\..\lib\serialization\memento_reader.cpp ..\..\lib\serialization\memento_writer.cpp ..\..\lib\serialization\persistable.cpp ..\..\lib\serialization\serializer.cpp ..\src\session\dispatching_center.cpp ..\src\session\feed_client.cpp ..\src\session\feed_connection.cpp ..\src\session\feed_scheduler.cpp ..\src\session\feed_server.cpp ..\src\session\login_proxy.cpp ..\src\session\message_publisher.cpp ..\src\session\subscriber.cpp ..\src\session\subscriber_group.cpp ..\src\session\subscriber_manager.cpp ..\src\session\system_message_handler.cpp ..\src\session\system_message_processor.cpp ..\src\session\system_message_processor_center.cpp ..\src\session\system_message_processor_factory.cpp ..\..\lib\tinyxml\tinystr.cpp ..\..\lib\tinyxml\tinyxml.cpp ..\..\lib\tinyxml\tinyxmlerror.cpp ..\..\lib\tinyxml\tinyxmlparser.cpp ..\src\usermanager\authenticator.cpp ..\src\usermanager\authorized_product.cpp ..\src\usermanager\default_authenticator.cpp ..\src\usermanager\user.cpp ..\src\usermanager\user_manager.cpp ..\..\lib\netmodule\client.cpp ..\..\lib\netmodule\client_impl.cpp ..\..\lib\netmodule\conn_manager.cpp ..\..\lib\netmodule\connection.cpp ..\..\lib\netmodule\message_factory.cpp ..\..\lib\netmodule\net_module.cpp ..\..\lib\netmodule\server.cpp ..\..\lib\netmodule\server_impl.cpp
+         server_impl.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\server_impl.h(4): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         server.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\server_impl.h(4): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         net_module.cpp
+         message_factory.cpp
+         connection.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\connection.h(5): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         conn_manager.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\conn_manager.cpp(4): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         client_impl.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\client_impl.h(6): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         client.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\client_impl.h(6): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         user_manager.cpp
+     1>e:\学习\wmdf\src\v10\src\usermanager\user_manager.h(11): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         user.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         default_authenticator.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         authorized_product.cpp
+         authenticator.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         tinyxmlparser.cpp
+         tinyxmlerror.cpp
+         tinyxml.cpp
+     1>e:\学习\wmdf\src\lib\tinyxml\tinyxml.cpp(944): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>e:\学习\wmdf\src\lib\tinyxml\tinyxml.cpp(1078): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>e:\学习\wmdf\src\lib\tinyxml\tinyxml.cpp(1225): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>e:\学习\wmdf\src\lib\tinyxml\tinyxml.cpp(1232): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+         tinystr.cpp
+         system_message_processor_factory.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         system_message_processor_center.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         system_message_processor.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         正在生成代码...
+         正在编译...
+         system_message_handler.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         subscriber_manager.cpp
+     1>e:\学习\wmdf\src\v10\src\session\subscriber_manager.h(7): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         subscriber_group.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         subscriber.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\connection.h(5): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         message_publisher.cpp
+     1>e:\学习\wmdf\src\v10\src\session\subscriber_manager.h(7): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         login_proxy.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\session\login_proxy.cpp”: No such file or directory
+         feed_server.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         feed_scheduler.cpp
+     1>e:\学习\wmdf\src\v10\src\session\feed_scheduler.h(6): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         feed_connection.cpp
+     1>e:\学习\wmdf\src\v10\src\session\feed_connection.h(7): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         feed_client.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         dispatching_center.cpp
+         serializer.cpp
+     1>e:\学习\wmdf\src\lib\serialization\serializer.cpp(61): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+         persistable.cpp
+         memento_writer.cpp
+         memento_reader.cpp
+         memento.cpp
+     1>e:\学习\wmdf\src\lib\serialization\memento.cpp(289): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\学习\wmdf\src\lib\serialization\memento.cpp(305): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         clonable.cpp
+         fast_codec_czcel1_market_data.cpp
+         fast_codec_shfel1_market_data.cpp
+         fast_codec_dcel1_market_data.cpp
+         正在生成代码...
+         正在编译...
+         monitor_header_codec.cpp
+         binary_codec_transfer_stat.cpp
+         binary_codec_client_status.cpp
+         fast_codec_shszl1_market_data.cpp
+         binary_codec_shszl1_market_data.cpp
+         fast_codec_cffel2_market_data.cpp
+         fast_codec_cffel1_market_data.cpp
+         binary_codec_cffel2_market_data.cpp
+         binary_codec_cffel1_market_data.cpp
+         stop_bit_codec_szl2_trans.cpp
+         stop_bit_codec_szl2_orders.cpp
+         stop_bit_codec_szl2_order_queue.cpp
+         stop_bit_codec_szl2_market_data.cpp
+         fast_codec_szl2_trans.cpp
+         fast_codec_szl2_orders.cpp
+         fast_codec_szl2_market_data.cpp
+         binary_codec_szl2_orders.cpp
+         fast_codec_shl2_trans.cpp
+         fast_codec_shl2_overview.cpp
+         fast_codec_shl2_order_queue.cpp
+         正在生成代码...
+         正在编译...
+         fast_codec_shl2_market_data.cpp
+         fast_codec_shl2_auction_price.cpp
+         binary_codec_shl2_trans.cpp
+         binary_codec_shl2_overview.cpp
+         binary_codec_shl2_order_queue.cpp
+         binary_codec_shl2_market_data.cpp
+         binary_codec_shl2_auction_price.cpp
+         system_header_codec.cpp
+         binary_codec_logout.cpp
+         binary_codec_login_response.cpp
+         binary_codec_login_request.cpp
+         binary_codec_heart_beat.cpp
+         protocol_processor_factory.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         protocol_processor_controller.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         protocol_processor_center.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         protocol_processor.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         protocol_description.cpp
+         mdf_message.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         market_header_codec.cpp
+         fast_message_codec.cpp
+         正在生成代码...
+         正在编译...
+         codec_buffer.cpp
+         binary_codec.cpp
+         transfer_status_collector.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\transfer_status_collector.h(5): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         productdata_logger.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\productdata_logger.h(4): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         product_adapter_listener.cpp
+         monitor_state.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\event_pool.h(6): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         monitor_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\monitor_adapter.h(4): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         logger.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\logger.h(5): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         feed_event.cpp
+         event_pool.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\event_pool.h(6): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         event_listener.cpp
+         client_status_collector.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\client_status_collector.h(6): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         user_command.cpp
+     1>e:\学习\wmdf\src\v10\src\usermanager\user_manager.h(11): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         replay_command.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\commandline\replay_command.cpp”: No such file or directory
+         net_command.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\monitor_adapter.h(4): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         monitor_command.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\monitor_adapter.h(4): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         logger_command.cpp
+         help_command.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\commandline\help_command.cpp”: No such file or directory
+         test_command.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\test\shl2_order_queue_codec_test.h(29): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\test\binary_codec_shl2_order_queue_test.h(26): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         system_console_command_factory.cpp
+         正在生成代码...
+         正在编译...
+         console_command_processor.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         console_command_printer.cpp
+         console_command_parser.cpp
+         console_command_manager.cpp
+         console_command_group.cpp
+         console_command.cpp
+         wmdf_file.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\environment\wmdf_file.cpp”: No such file or directory
+         utils.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         system_config.cpp
+         strutils.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         server_environment.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         file_seek.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\environment\file_seek.cpp”: No such file or directory
+         file.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\file.cpp(2): fatal error C1083: 无法打开包括文件:“boost/filesystem/operations.hpp”: No such file or directory
+         directory.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\directory.cpp(2): fatal error C1083: 无法打开包括文件:“boost/filesystem/operations.hpp”: No such file or directory
+         data_writer.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\environment\data_writer.cpp”: No such file or directory
+         data_reader.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\environment\data_reader.cpp”: No such file or directory
+         application_directory.cpp
+         windCodeCodec.cpp
+     1>e:\学习\wmdf\src\v10\src\product\decoder\windcodecodec.cpp(1): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         utilsString.cpp
+         securityIndex.cpp
+         正在生成代码...
+         正在编译...
+         securityContainer.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         packetDecoder.cpp
+     1>e:\学习\wmdf\src\v10\src\product\decoder\windcodecodec.h(3): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         l2marketsnapshotsender.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\product\decoder\l2marketsnapshotsender.cpp”: No such file or directory
+         l2marketsnapshotcontainer.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\product\decoder\l2marketsnapshotcontainer.cpp”: No such file or directory
+         indexBase.cpp
+         index_transfer.cpp
+         dataDecoder.cpp
+     1>e:\学习\wmdf\src\v10\src\product\decoder\windcodecodec.h(3): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         product_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\session\subscriber_manager.h(7): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         iproduct_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\monitor\productdata_logger.h(4): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         adapter_guard.cpp
+     1>e:\学习\wmdf\src\v10\src\product\adapter\adapter_guard.h(4): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         rawdata_ssel2_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         rawdata_manager.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\product\adapter\rawdata_manager.cpp(348): error C2039: “pNoOrders”: 不是“PriceLevel_3111”的成员
+                 e:\学习\wmdf\src\lib\feedhandler\sse\ia32\include\ssel2_structdefine.h(109) : 参见“PriceLevel_3111”的声明
+     1>e:\学习\wmdf\src\v10\src\product\adapter\rawdata_manager.cpp(363): error C2039: “pNoOrders”: 不是“PriceLevel_3111”的成员
+                 e:\学习\wmdf\src\lib\feedhandler\sse\ia32\include\ssel2_structdefine.h(109) : 参见“PriceLevel_3111”的声明
+         rawdata_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         szsel2_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         szsel1_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         ssel2_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         ssel1_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         sseszse_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         simulator_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\product\adapter\simulator_adapter.h(9): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         relay_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\session\subscriber_manager.h(7): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         正在生成代码...
+         正在编译...
+         fx_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         dce_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         shfe_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         czce_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         cffe_adapter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         version_descripter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         replay_adapter.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\product\replay_adapter.cpp”: No such file or directory
+         rawdata_product_replayer.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\product\rawdata_product_replayer.cpp”: No such file or directory
+         product_source_manager.cpp
+         product_source.cpp
+         product_manager.cpp
+         product_descripter.cpp
+         product_adapter_factory.cpp
+     1>e:\学习\wmdf\src\v10\src\product\adapter\adapter_guard.h(4): fatal error C1083: 无法打开包括文件:“boost/thread.hpp”: No such file or directory
+         message_descripter.cpp
+         feed_product_replayer.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\product\feed_product_replayer.cpp”: No such file or directory
+         WMDFAdapter.cpp
+         stdafx.cpp
+         正在生成代码...
+     1>已完成生成项目“E:\学习\WMDF\Src\V10\project\WMDFAdapter.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:01:08.77

@@ -1,0 +1,71 @@
+<UserManager>
+    <User user_id="0" user_name="test" passwd="test" ip_address="10.100.3.4" company="wind" contacts="test" phone_number="12345678" email_address="user1@wind.com.cn" is_privileged="1" authorization_deadline="20120630">
+        <AuthorizedProduct product_id="12">
+            <Message message_id="1" />
+            <Message message_id="2" />
+            <Message message_id="3" />
+            <Message message_id="4" />
+            <Message message_id="5" />
+        </AuthorizedProduct>
+    </User>
+    <User user_id="1" user_name="test1" passwd="test1" ip_address="10.100.3.4" company="wind" contacts="test" phone_number="12345678" email_address="user1@wind.com.cn" is_privileged="1" authorization_deadline="20120630">
+        <AuthorizedProduct product_id="10">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="11">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="13">
+            <Message message_id="1" />
+            <Message message_id="2" />
+            <Message message_id="3" />
+            <Message message_id="4" />
+        </AuthorizedProduct>
+    </User>
+    <User user_id="2" user_name="admin" passwd="admin" ip_address="0.0.0.0" company="wind" contacts="wind" phone_number="wind" email_address="gava@wind.com.cn" is_privileged="1" authorization_deadline="20111231">
+        <AuthorizedProduct product_id="1">
+            <Message message_id="1" />
+            <Message message_id="2" />
+            <Message message_id="3" />
+            <Message message_id="4" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="2">
+            <Message message_id="1" />
+            <Message message_id="2" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="10">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="11">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="12">
+            <Message message_id="1" />
+            <Message message_id="2" />
+            <Message message_id="3" />
+            <Message message_id="4" />
+            <Message message_id="5" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="13">
+            <Message message_id="1" />
+            <Message message_id="2" />
+            <Message message_id="3" />
+            <Message message_id="4" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="20">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="21">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="22">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="23">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+        <AuthorizedProduct product_id="24">
+            <Message message_id="1" />
+        </AuthorizedProduct>
+    </User>
+</UserManager>

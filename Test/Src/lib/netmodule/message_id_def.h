@@ -1,0 +1,6 @@
+#ifndef WIND_NET_MESSAGE_ID_DEF_
+#define WIND_NET_MESSAGE_ID_DEF_
+
+#define HEART_PACKET 0x01
+
+#endif

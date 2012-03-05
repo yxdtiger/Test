@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|x64">
+      <Configuration>Template</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F21900AD-036A-4496-9CE7-50F266B2A745}</ProjectGuid>
+    <RootNamespace>WMDF_Studio</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Template|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\Debug\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\Release\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Raclient.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\lib\boost\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt-gd.lib;libboost_system-vc90-mt-gd.lib;libboost_filesystem-vc90-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/Raclient.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Raclient.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\lib\boost\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt-gd.lib;libboost_system-vc90-mt-gd.lib;libboost_filesystem-vc90-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/Raclient.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/Raclient.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\lib\boost\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt.lib;libboost_system-vc90-mt.lib;libboost_filesystem-vc90-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/Raclient.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release/Raclient.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\..\lib\boost\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/Raclient.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc90.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt-gd.lib;libboost_system-vc90-mt-gd.lib;libboost_filesystem-vc90-mt-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\lib\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/Raclient.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\usermanager\authorized_product.cpp" />
+    <ClCompile Include="..\src\usermanager\user.cpp" />
+    <ClCompile Include="..\src\usermanager\user_manager.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\src\protocol\protocol_description.cpp" />
+    <ClCompile Include="..\..\lib\serialization\clonable.cpp" />
+    <ClCompile Include="..\..\lib\serialization\data_reader.cpp" />
+    <ClCompile Include="..\..\lib\serialization\data_writer.cpp" />
+    <ClCompile Include="..\..\lib\serialization\file_seek.cpp" />
+    <ClCompile Include="..\..\lib\serialization\memento.cpp" />
+    <ClCompile Include="..\..\lib\serialization\memento_reader.cpp" />
+    <ClCompile Include="..\..\lib\serialization\memento_writer.cpp" />
+    <ClCompile Include="..\..\lib\serialization\persistable.cpp" />
+    <ClCompile Include="..\..\lib\serialization\serializer.cpp" />
+    <ClCompile Include="..\..\lib\serialization\wmdf_file.cpp" />
+    <ClCompile Include="..\src\studio\common\ReportListCtrl.cpp" />
+    <ClCompile Include="..\src\studio\common\CheckBoxAutoCheckTreeCtrl.cpp" />
+    <ClCompile Include="..\src\studio\common\CheckBoxTreeCtrl.cpp" />
+    <ClCompile Include="..\src\studio\common\ExpandTreeCtrl.cpp" />
+    <ClCompile Include="..\src\studio\common\AddOrModifyDialog.cpp" />
+    <ClCompile Include="..\src\studio\common\BeautifulDialog.cpp" />
+    <ClCompile Include="..\src\studio\common\UserSerachDlg.cpp" />
+    <ClCompile Include="..\src\studio\common\BeautifulButton.cpp" />
+    <ClCompile Include="..\src\studio\common\FlashEdit.cpp" />
+    <ClCompile Include="..\src\studio\common\UIDateTime.cpp" />
+    <ClCompile Include="..\src\studio\common\UIUilties.cpp" />
+    <ClCompile Include="..\src\studio\common\ValueTranslation.cpp" />
+    <ClCompile Include="..\src\studio\common\WordTranslation.cpp" />
+    <ClCompile Include="..\src\studio\main_frame\ChildFrm.cpp" />
+    <ClCompile Include="..\src\studio\main_frame\MainFrm.cpp" />
+    <ClCompile Include="..\src\studio\main_frame\StdAfx.cpp" />
+    <ClCompile Include="..\src\studio\main_frame\WMDF_Studio.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\ManageClientDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\ManageClientListCtrl.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\ManageCustomerTreeCtrl.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\UserAddDlg.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\UserAddProductDeadlineDlg.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\UserDeleteDlg.cpp" />
+    <ClCompile Include="..\src\studio\management_customer\UserModifyDlg.cpp" />
+    <ClCompile Include="..\src\studio\reference_product\ReferenceProductView.cpp" />
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyBackupSourceDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyMarketTimeDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyProductSourceDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifySubscribedProductDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceSelectDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_system_config\ManagementSystemConfighDlg.cpp" />
+    <ClCompile Include="..\src\studio\management_product\ManageProductAddMessageDescripterDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product\ManageProductAddProductDescripterDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product\ManageProductAddVersionDescripterDialog.cpp" />
+    <ClCompile Include="..\src\studio\management_product\ManageProductDialog.cpp" />
+    <ClCompile Include="..\src\studio\reference_struct\ReferenceAPIandStructView.cpp" />
+    <ClCompile Include="..\src\product\message_descripter.cpp" />
+    <ClCompile Include="..\src\product\product_descripter.cpp" />
+    <ClCompile Include="..\src\product\product_manager.cpp" />
+    <ClCompile Include="..\src\product\product_source.cpp" />
+    <ClCompile Include="..\src\product\product_source_manager.cpp" />
+    <ClCompile Include="..\src\product\version_descripter.cpp" />
+    <ClCompile Include="..\src\environment\application_directory.cpp" />
+    <ClCompile Include="..\src\environment\directory.cpp" />
+    <ClCompile Include="..\src\environment\file.cpp" />
+    <ClCompile Include="..\src\environment\system_config.cpp" />
+    <ClCompile Include="..\src\environment\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\usermanager\authorized_product.h" />
+    <ClInclude Include="..\src\usermanager\user.h" />
+    <ClInclude Include="..\src\usermanager\user_manager.h" />
+    <ClInclude Include="..\..\lib\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\lib\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\src\protocol\protocol_description.h" />
+    <ClInclude Include="..\..\lib\serialization\clonable.h" />
+    <ClInclude Include="..\..\lib\serialization\data_reader.h" />
+    <ClInclude Include="..\..\lib\serialization\data_writer.h" />
+    <ClInclude Include="..\..\lib\serialization\file_seek.h" />
+    <ClInclude Include="..\..\lib\serialization\memento.h" />
+    <ClInclude Include="..\..\lib\serialization\memento_reader.h" />
+    <ClInclude Include="..\..\lib\serialization\memento_writer.h" />
+    <ClInclude Include="..\..\lib\serialization\persistable.h" />
+    <ClInclude Include="..\..\lib\serialization\serializer.h" />
+    <ClInclude Include="..\..\lib\serialization\wmdf_file.h" />
+    <ClInclude Include="..\src\studio\common\ReportListCtrl.h" />
+    <ClInclude Include="..\src\studio\common\CheckBoxAutoCheckTreeCtrl.h" />
+    <ClInclude Include="..\src\studio\common\CheckBoxTreeCtrl.h" />
+    <ClInclude Include="..\src\studio\common\ExpandTreeCtrl.h" />
+    <ClInclude Include="..\src\studio\common\AddOrModifyDialog.h" />
+    <ClInclude Include="..\src\studio\common\BeautifulDialog.h" />
+    <ClInclude Include="..\src\studio\common\UserSerachDlg.h" />
+    <ClInclude Include="..\src\studio\common\BeautifulButton.h" />
+    <ClInclude Include="..\src\studio\common\FlashEdit.h" />
+    <ClInclude Include="..\src\studio\common\UIDateTime.h" />
+    <ClInclude Include="..\src\studio\common\UIUilties.h" />
+    <ClInclude Include="..\src\studio\common\ValueTranslation.h" />
+    <ClInclude Include="..\src\studio\common\WordTranslation.h" />
+    <ClInclude Include="..\src\studio\main_frame\ChildFrm.h" />
+    <ClInclude Include="..\src\studio\main_frame\MainFrm.h" />
+    <ClInclude Include="..\src\studio\main_frame\Resource.h" />
+    <ClInclude Include="..\src\studio\main_frame\StdAfx.h" />
+    <ClInclude Include="..\src\studio\main_frame\targetver.h" />
+    <ClInclude Include="..\src\studio\main_frame\WMDF_Studio.h" />
+    <ClInclude Include="..\src\studio\management_customer\ManageClientDialog.h" />
+    <ClInclude Include="..\src\studio\management_customer\ManageClientListCtrl.h" />
+    <ClInclude Include="..\src\studio\management_customer\ManageCustomerTreeCtrl.h" />
+    <ClInclude Include="..\src\studio\management_customer\UserAddDlg.h" />
+    <ClInclude Include="..\src\studio\management_customer\UserAddProductDeadlineDlg.h" />
+    <ClInclude Include="..\src\studio\management_customer\UserDeleteDlg.h" />
+    <ClInclude Include="..\src\studio\management_customer\UserModifyDlg.h" />
+    <ClInclude Include="..\src\studio\reference_product\ReferenceProductView.h" />
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyBackupSourceDialog.h" />
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyMarketTimeDialog.h" />
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyProductSourceDialog.h" />
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifySubscribedProductDialog.h" />
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceDialog.h" />
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceSelectDialog.h" />
+    <ClInclude Include="..\src\studio\management_system_config\ManagementSystemConfighDlg.h" />
+    <ClInclude Include="..\src\studio\management_product\ManageProductAddMessageDescripterDialog.h" />
+    <ClInclude Include="..\src\studio\management_product\ManageProductAddProductDescripterDialog.h" />
+    <ClInclude Include="..\src\studio\management_product\ManageProductAddVersionDescripterDialog.h" />
+    <ClInclude Include="..\src\studio\management_product\ManageProductDialog.h" />
+    <ClInclude Include="..\src\studio\reference_struct\ReferenceAPIandStructView.h" />
+    <ClInclude Include="..\src\product\message_descripter.h" />
+    <ClInclude Include="..\src\product\product_descripter.h" />
+    <ClInclude Include="..\src\product\product_manager.h" />
+    <ClInclude Include="..\src\product\product_source.h" />
+    <ClInclude Include="..\src\product\product_source_manager.h" />
+    <ClInclude Include="..\src\product\version_descripter.h" />
+    <ClInclude Include="..\src\include\date_time.h" />
+    <ClInclude Include="..\src\include\time.h" />
+    <ClInclude Include="..\src\include\wmdf_api.h" />
+    <ClInclude Include="..\src\include\wmdf_structs.h" />
+    <ClInclude Include="..\src\environment\application_directory.h" />
+    <ClInclude Include="..\src\environment\atomic_counter.h" />
+    <ClInclude Include="..\src\environment\atomicops.h" />
+    <ClInclude Include="..\src\environment\directory.h" />
+    <ClInclude Include="..\src\environment\file.h" />
+    <ClInclude Include="..\src\environment\splitter.h" />
+    <ClInclude Include="..\src\environment\system_config.h" />
+    <ClInclude Include="..\src\environment\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\studio\main_frame\res\1.bmp" />
+    <None Include="..\src\studio\main_frame\res\2.bmp" />
+    <None Include="..\src\studio\main_frame\res\3.bmp" />
+    <None Include="..\src\studio\main_frame\res\4.bmp" />
+    <None Include="..\src\studio\main_frame\res\BackGround.bmp" />
+    <None Include="..\src\studio\main_frame\res\BITMAPAUDVIEW.bmp" />
+    <None Include="..\src\studio\main_frame\res\bmp00001.bmp" />
+    <None Include="..\src\studio\main_frame\res\BottomBand.bmp" />
+    <None Include="..\src\studio\main_frame\res\cancle.bmp" />
+    <None Include="..\src\studio\main_frame\res\canlelbig.bmp" />
+    <None Include="..\src\studio\main_frame\res\closebtn.bmp" />
+    <None Include="..\src\studio\main_frame\res\closehotbutton.bmp" />
+    <None Include="..\src\studio\main_frame\res\HELP.bmp" />
+    <None Include="..\src\studio\main_frame\res\input.bmp" />
+    <None Include="..\src\studio\main_frame\res\inputviewuser.bmp" />
+    <None Include="..\src\studio\main_frame\res\LEDOFF.bmp" />
+    <None Include="..\src\studio\main_frame\res\LEDON.bmp" />
+    <None Include="..\src\studio\main_frame\res\LeftBand.bmp" />
+    <None Include="..\src\studio\main_frame\res\LeftTitle.bmp" />
+    <None Include="..\src\studio\main_frame\res\Log.ico" />
+    <None Include="..\src\studio\main_frame\res\madecert.bmp" />
+    <None Include="..\src\studio\main_frame\res\maxbutton.bmp" />
+    <None Include="..\src\studio\main_frame\res\maxhotbutton.bmp" />
+    <None Include="..\src\studio\main_frame\res\MidTitle.bmp" />
+    <None Include="..\src\studio\main_frame\res\minbutton.bmp" />
+    <None Include="..\src\studio\main_frame\res\minhotbutton.bmp" />
+    <None Include="..\src\studio\main_frame\res\NO.bmp" />
+    <None Include="..\src\studio\main_frame\res\ok.bmp" />
+    <None Include="..\src\studio\main_frame\res\pass.bmp" />
+    <None Include="..\src\studio\main_frame\res\printok.bmp" />
+    <None Include="..\src\studio\main_frame\res\RightBand.bmp" />
+    <None Include="..\src\studio\main_frame\res\RightTitle.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_log.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_monitor_user.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_overall.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_Product.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_reference_apiandproduct_ssel1_snapshot.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_reference_product.bmp" />
+    <None Include="..\src\studio\main_frame\res\Test_Securities.bmp" />
+    <None Include="..\src\studio\main_frame\res\Toolbar.bmp" />
+    <None Include="..\src\studio\main_frame\res\treeCtrlIco.bmp" />
+    <None Include="..\src\studio\main_frame\res\view.bmp" />
+    <None Include="..\src\studio\main_frame\res\viewmade.bmp" />
+    <None Include="..\src\studio\main_frame\res\WMDF_Studio.ico" />
+    <None Include="..\src\studio\main_frame\res\WMDF_Studio.rc2" />
+    <None Include="..\src\studio\main_frame\res\信息.ico" />
+    <None Include="..\src\studio\main_frame\res\关于.ico" />
+    <None Include="..\src\studio\main_frame\res\制作.ico" />
+    <None Include="..\src\studio\main_frame\res\历史.ico" />
+    <None Include="..\src\studio\main_frame\res\审核.ico" />
+    <None Include="..\src\studio\main_frame\res\注销.ico" />
+    <None Include="..\src\studio\main_frame\res\申请.ico" />
+    <None Include="..\src\studio\main_frame\res\登录.ico" />
+    <None Include="..\src\studio\main_frame\res\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\studio\main_frame\WMDF_Studio.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\SVN\MDF\Src\ver10\src\studio\main_frame\WMDF_Studio.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

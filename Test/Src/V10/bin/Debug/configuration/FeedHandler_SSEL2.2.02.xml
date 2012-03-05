@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates version="2.02" updateDate="2011-08-30" xmlns="http://www.fixprotocol.org/ns/template-definition" templateNs="http://www.fixprotocol.org/ns/templates/sample" ns="http://www.fixprotocol.org/ns/fix"> 
+    <template name="Transaction" id="1101">
+        <string name="MessageType" id="35"><constant value="UA1101"/></string>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <int32 name="TradeIndex" id="10011" windid="60"><increment/></int32>
+        <int32 name="TradeChannel" id="10115" windid="621"><copy/></int32>
+        <string name="SecurityID" id="48" windid="130" presence="optional"><copy/></string>
+        <int32 name="TradeRef" id="10012" windid="660" presence="optional"><increment/></int32>
+        <int32 name="TradeTime" id="10013" windid="2" presence="optional"><copy/></int32>
+        <int32 name="TradePrice" id="10014" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="TradeQty" id="10015" windid="8" presence="optional"><default/></int32>
+        <int64 name="TradeMoney" id="10016" windid="59" presence="optional" decimalPlaces="3"><default/></int64>
+    </template>
+    <template name="MarketData" id="1102">
+        <string name="MessageType" id="35"><constant value="UA1102"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int32 name="OpenPx" id="10018" windid="5" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="HighPx" id="332" windid="6" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LowPx" id="333" windid="7" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LastPx" id="31" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <sequence name="BidPriceLevel" windid="600" presence="optional">
+            <length name="NoBidPriceLevel" id="10068" presence="optional"/>
+            <int64 name="BidSize" id="134"/>
+            <int32 name="BidPx" id="132" decimalPlaces="3"/>
+        </sequence>
+        <sequence name="OfferPriceLevel" windid="601" presence="optional">
+            <length name="NoOfferPriceLevel" id="10069" presence="optional"/>
+            <int64 name="OfferSize" id="135"/>
+            <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+        </sequence>
+        <int32 name="NumTrades" id="8503" windid="71" presence="optional"><default/></int32>
+        <int64 name="TotalVolumeTrade" id="387" windid="8" presence="optional"><default/></int64>
+        <int64 name="TotalValueTrade" id="8504" windid="59" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="TotalBidQty" id="10043" windid="340" presence="optional"><default/></int64>
+        <int32 name="WeightedAvgBidPx" id="10039" windid="86" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="AltWeightedAvgBidPx" id="10116" windid="624" presence="optional" decimalPlaces="4"><default/></int32>
+        <int64 name="TotalOfferQty" id="10044" windid="341" presence="optional"><default/></int64>
+        <int32 name="WeightedAvgOfferPx" id="10040" windid="87" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="AltWeightedAvgOfferPx" id="10117" windid="625" presence="optional" decimalPlaces="4"><default/></int32>
+        <int32 name="IOPV" id="10057" windid="253" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="YieldToMaturity" id="10060" windid="261" presence="optional" decimalPlaces="4"><default/></int32>
+    </template>
+    <template name="orderRanking" id="1103">
+        <string name="MessageType" id="35"><constant value="UA1103"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <sequence name="Rankings" windid="602" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"></length>
+            <int32 name="Ranking" id="10046"/>
+            <string name="SecurityID" id="48"/>
+            <int64 name="TotalOrderQty" id="10047"/>
+            <int64 name="TotalVolumeTraded" id="387"/>
+            <int64 name="TotalValueTraded" id="8504" decimalPlaces="3"/>
+        </sequence>
+    </template>
+    <template name="TransactionRankingByIndustry" id ="1104">
+        <string name="MessageType" id="35"><constant value="UA1104"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <int64 name="MarketTotalValueTraded" id="10052" windid="59" decimalPlaces="3" presence="optional"><default/></int64>
+        <sequence name="Rankings" windid="603" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"/>
+            <int32 name="Ranking" id="10050"><increment/></int32>
+            <string name="IndustryCode" id="10049"/>
+            <int64 name="IndustryTotalValueTraded" id="10053" decimalPlaces="3"/>
+            <sequence name="TotalValueTradedRankings">
+                <length name="NoTotalValueTradedRankings" id="10051" presence="optional"/>
+                <int32 name="Ranking" id="10046"/>
+                <string name="SecurityID" id="48"/>
+                <int64 name="TotalValueTraded" id="8504" decimalPlaces="3"/>
+            </sequence>
+        </sequence>
+    </template>
+    <template name="SingleOrderCancellationRanking" id="1105">
+        <string name="MessageType" id="35"><constant value="UA1105"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <sequence name="Rankings" windid="604" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"/>
+            <int32 name="Ranking" id="10046"/>
+            <string name="SecurityID" id="48"/>
+            <int32 name="OrderEntryTime" id="8500"/>
+            <int32 name="Quantity" id="53"/>
+            <int32 name="Price" id="44" decimalPlaces="3"/>
+        </sequence>
+    </template>
+    <template name="ConsolidatedOrderCancellationRanking" id="1106">
+        <string name="MessageType" id="35"><constant value="UA1106"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <sequence name="Rankings" windid="605" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"/>
+            <int32 name="Ranking" id="10046"/>
+            <string name="SecurityID" id="48"/>
+            <int64 name="TotalWithdrawnQty" id="10054"/>
+        </sequence>
+    </template>
+    <template name="Index" id="1113">
+        <string name="MessageType" id="35"><constant value="UA1113"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int32 name="OpenIndex" id="10006" windid="5" presence="optional" decimalPlaces="3"><default/></int32>
+        <int64 name="Turnover" id="10118" windid="59" presence="optional"><default/></int64>
+        <int32 name="HighIndex" id="10009" windid="6" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LowIndex" id="10010" windid="7" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LastIndex" id="10008" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <int64 name="TotalVolumeTraded" id="387" windid="8" presence="optional"><default/></int64>
+    </template>
+    <template name="MarketOverview" id="1115">
+        <string name="MessageType" id="35"><constant value="UA1115"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130" presence="optional"/>
+        <int32 name="AShareIndex" id="10001" windid="661" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="BShareIndex" id="10002" windid="662" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="SSEIndex" id="10005" windid="663" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="OrigTime" id="42" windid="633" presence="optional"><default/></int32>
+        <int32 name="OrigDate" id="10003" windid="634" presence="optional"><default/></int32>
+        <string name="EndOfDayMarker" id="10004" windid="664" presence="optional"><default/></string>
+    </template>
+    <template name="OrderQueue" id="1111">
+        <string name="MessageType" id="35"><constant value="UA1111"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="SecurityID" id="48" windid="130"></string>
+        <int32 name="ImageStatus" id="10146" windid="635"><copy/></int32>
+        <sequence name="PriceLevel"  windid="606" presence="optional">
+            <length name="NoPriceLevel" id="10063" presence="optional"/>
+            <int32 name="PriceLeveOperator" id="10147" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" decimalPlaces="3"/>
+            <int32 name="NumOrders" id="10067"/>
+            <sequence name="NoOrders" presence="optional">
+                <length name="Orders" id="73" presence="optional"/>
+                <int32 name="OrderQueueOperator" id="10148" presence="optional"><default/></int32>
+                <int32 name="OrderQueueOperatorEntryID" id="10149" presence="optional"><default/></int32>
+                <int32 name="OrderQty" id="38" presence="optional"><default/></int32>
+            </sequence>
+        </sequence>
+    </template>
+    <template name="VirtualAuctionPrice" id="1107">
+        <string name="MessageType" id="35"><constant value="UA1107"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int32 name="Price" id="44" windid="640" decimalPlaces="3"/>
+        <int64 name="VirtualAuctionQty" id="10127" windid="641"/>
+        <int64 name="BidLeaveQty" id="10125" windid="665"/>
+        <int64 name="AskLeaveQty" id="10126" windid="666"/>
+    </template>
+    <template name="A+HMarketData" id="2102">
+        <string name="MessageType" id="35"><constant value="UA2102"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<int32 name="PreClosePx" id="140" windid="4" decimalPlaces="3"/>
+				<int32 name="HighPx" id="332" windid="6" decimalPlaces="3"/>
+				<int32 name="LowPx" id="333" windid="7" decimalPlaces="3"/>
+				<int32 name="LastPx" id="31" windid="3" decimalPlaces="3"/>
+				<int32 name="NorminalPx" id="10078" windid="667" decimalPlaces="3"/>
+				<int32 name="BidPx" id="132" windid="668" decimalPlaces="3"/>
+				<int32 name="OfferPx" id="133" windid="669" decimalPlaces="3"/>
+				<int64 name="TotalVolumeTrade" id="387" windid="8"/>
+				<int64 name="TotalValueTrade" id="8504" windid="59"/>
+    </template>
+    <template name="A+HVirtualAuctionPrice" id="2107">
+        <string name="MessageType" id="35"><constant value="UA2107"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+				<int32 name="DataStatus" id="10121" windid="620" presence="optional"/>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<int32 name="ClosePrice" id="140" windid="4" decimalPlaces="3"/>
+				<int32 name="Price" id="44" windid="640" decimalPlaces="3"/>
+				<int64 name="VirtualAuctionQty" id="10127" windid="641"/>
+    </template>
+    <template name="MarketOrderSummary" id="1112">
+        <string name="MessageType" id="35"><constant value="UA1112"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"></string>
+        <int64 name="NumBidOrders" id="10070" windid="636" presence="optional"><default/></int64>
+        <int32 name="BidLevelStatus" id="10143" windid="637" presence="optional"><default/></int32>
+        <sequence name="BidLevels" windid="607" presence="optional">
+            <length name="NoBidLevel" id="10068" presence="optional"/>
+            <int32 name="Operator" id="10145" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" presence="optional" decimalPlaces="3"><default/></int32>
+            <int64 name="OrderQty" id="38" presence="optional"><default/></int64>
+            <int32 name="NumOrders" id="10067" presence="optional"><default/></int32>
+        </sequence>
+        <int64 name="NumOfferOrders" id="10071" windid="638" presence="optional"><default/></int64>
+        <int32 name="OfferLevelStatus" id="10144" windid="639" presence="optional"><default/></int32>
+        <sequence name="OfferLevels" windid="608" presence="optional">
+            <length name="NoOfferLevel" id="10069" presence="optional"/>
+            <int32 name="Operator" id="10145" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" presence="optional" decimalPlaces="3"><default/></int32>
+            <int64 name="OrderQty" id="38" presence="optional"><default/></int64>
+            <int32 name="NumOrders" id="10067" presence="optional"><default/></int32>
+        </sequence>
+    </template>
+    <template name="NGTSTransaction" id="3201">
+        <string name="MessageType" id="35"><constant value="UA3201"/></string>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <int32 name="TradeIndex" id="10011" windid="60"><increment/></int32> 
+        <int32 name="TradeChannel" id="10115" windid="621"><copy/></int32>
+        <string name="SecurityID" id="48" windid="130" presence="optional"><copy/></string>
+        <int32 name="TradeTime" id="10013" windid="2" presence="optional"><copy/></int32>
+        <int32 name="TradePrice" id="10014" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <int64 name="TradeQty" id="10015" windid="8" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="TradeMoney" id="10016" windid="59" presence="optional" decimalPlaces="5"><default/></int64>
+    </template>
+    <template name="NGTSMarketData" id="3202">
+        <string name="MessageType" id="35"><constant value="UA3202"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int32 name="ImageStatus" id="10146" windid="635"/>
+        <int32 name="PreClosePx" id="140" windid="4" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="OpenPx" id="10018" windid="5" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="HighPx" id="332" windid="6" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LowPx" id="333" windid="7" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LastPx" id="31" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="ClosePx" id="10204" windid="670" presence="optional" decimalPlaces="3"><default/></int32>
+        <string name="InstrumentStatus" id="10135" windid="623" presence="optional"><default/></string>
+        <int32 name="NumTrades" id="8503" windid="71" presence="optional"><default/></int32>
+        <int64 name="TotalVolumeTrade" id="387" windid="8" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="TotalValueTrade" id="8504" windid="59" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="TotalBidQty" id="10043" windid="340" presence="optional" decimalPlaces="3"><default/></int64>
+        <int32 name="WeightedAvgBidPx" id="10039" windid="86" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="AltWeightedAvgBidPx" id="10116" windid="624" presence="optional" decimalPlaces="3"><default/></int32>
+        <int64 name="TotalOfferQty" id="10044" windid="341" presence="optional" decimalPlaces="3"><default/></int64>
+        <int32 name="WeightedAvgOfferPx" id="10040" windid="87" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="AltWeightedAvgOfferPx" id="10117" windid="625" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="IOPV" id="10057" windid="253" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="YieldToMaturity" id="10060" windid="261" presence="optional" decimalPlaces="4"><default/></int32>
+        <int64 name="TotalWarrantExecQty" id="10138" windid="626" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="WarLowerPx" id="10139" windid="627" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="WarUpperPx" id="10140" windid="628" presence="optional" decimalPlaces="3"><default/></int64>
+        <sequence name="BidLevels" windid="611" presence="optional">
+            <length name="NoBidLevel" id="10068" presence="optional"/>
+            <int32 name="PriceLeveOperator" id="10147" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" presence="optional" decimalPlaces="3"><default/></int32>
+            <int64 name="OrderQty" id="39" presence="optional" decimalPlaces="3"><default/></int64>
+            <int32 name="NumOrders" id="10067" presence="optional"><default/></int32>
+            <sequence name="NoOrders" presence="optional">
+                <length name="Orders" id="73" presence="optional"/>
+                <int32 name="OrderQueueOperator" id="10148" presence="optional"><default/></int32>
+                <int32 name="OrderQueueOperatorEntryID" id="10149" presence="optional"><default/></int32>
+                <int64 name="OrderQty" id="38" presence="optional" decimalPlaces="3"><default/></int64>
+            </sequence>
+        </sequence>
+        <sequence name="OfferLevels" windid="612" presence="optional">
+            <length name="NoOfferLevel" id="10069" presence="optional"/>
+            <int32 name="PriceLeveOperator" id="10147" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" presence="optional" decimalPlaces="3"><default/></int32>
+            <int64 name="OrderQty" id="39" presence="optional" decimalPlaces="3"><default/></int64>
+            <int32 name="NumOrders" id="10067" presence="optional"><default/></int32>
+            <sequence name="NoOrders" presence="optional">
+                <length name="Orders" id="73" presence="optional"/>
+                <int32 name="OrderQueueOperator" id="10148" presence="optional"><default/></int32>
+                <int32 name="OrderQueueOperatorEntryID" id="10149" presence="optional"><default/></int32>
+                <int64 name="OrderQty" id="38" presence="optional" decimalPlaces="3"><default/></int64>
+            </sequence>
+        </sequence>
+    </template>
+    <template name="NGTSTransaction" id="3101">
+        <string name="MessageType" id="35"><constant value="UA3101"/></string>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <int32 name="TradeIndex" id="10011" windid="60"><increment/></int32> 
+        <int32 name="TradeChannel" id="10115" windid="621"><copy/></int32>
+        <string name="SecurityID" id="48" windid="130" presence="optional"><copy/></string>
+        <int32 name="TradeTime" id="10013" windid="2" presence="optional"><copy/></int32>
+        <int32 name="TradePrice" id="10014" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <int64 name="TradeQty" id="10015" windid="8" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="TradeMoney" id="10016" windid="59" presence="optional" decimalPlaces="5"><default/></int64>
+    </template>
+    <template name="NGTSMarketData" id="3102">
+        <string name="MessageType" id="35"><constant value="UA3102"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int32 name="PreClosePx" id="140" windid="4" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="OpenPx" id="10018" windid="5" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="HighPx" id="332" windid="6" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LowPx" id="333" windid="7" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LastPx" id="31" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <string name="InstrumentStatus" id="10135" windid="623" presence="optional"><default/></string>
+        <sequence name="BidPriceLevel" windid="600" presence="optional">
+            <length name="NoBidPriceLevel" id="10068" presence="optional"/>
+            <int64 name="BidSize" id="134" decimalPlaces="3"/>
+            <int32 name="BidPx" id="132" decimalPlaces="3"/>
+        </sequence>
+        <sequence name="OfferPriceLevel" windid="601" presence="optional">
+            <length name="NoOfferPriceLevel" id="10069" presence="optional"/>
+            <int64 name="OfferSize" id="135" decimalPlaces="3"/>
+            <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+        </sequence>
+        <int32 name="NumTrades" id="8503" windid="71" presence="optional"><default/></int32>
+        <int64 name="TotalVolumeTrade" id="387" windid="8" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="TotalValueTrade" id="8504" windid="59" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="TotalBidQty" id="10043" windid="340" presence="optional" decimalPlaces="3"><default/></int64>
+        <int32 name="WeightedAvgBidPx" id="10039" windid="86" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="AltWeightedAvgBidPx" id="10116" windid="624" presence="optional" decimalPlaces="3"><default/></int32>
+        <int64 name="TotalOfferQty" id="10044" windid="341" presence="optional" decimalPlaces="3"><default/></int64>
+        <int32 name="WeightedAvgOfferPx" id="10040" windid="87" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="AltWeightedAvgOfferPx" id="10117" windid="625" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="IOPV" id="10057" windid="253" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="YieldToMaturity" id="10060" windid="261" presence="optional" decimalPlaces="4"><default/></int32>
+        <int64 name="TotalWarrantExecQty" id="10138" windid="626" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="WarLowerPx" id="10139" windid="627" presence="optional" decimalPlaces="3"><default/></int64>
+        <int64 name="WarUpperPx" id="10140" windid="628" presence="optional" decimalPlaces="3"><default/></int64>
+    </template>
+    <template name="NGTSOrderRanking" id="3103">
+        <string name="MessageType" id="35"><constant value="UA3103"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <sequence name="Rankings" windid="602" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"></length>
+            <int32 name="Ranking" id="10046"/>
+            <string name="SecurityID" id="48"/>
+            <int64 name="TotalOrderQty" id="10047" decimalPlaces="3"/>
+            <int64 name="TotalVolumeTraded" id="387" decimalPlaces="3"/>
+            <int64 name="TotalValueTraded" id="8504" decimalPlaces="5"/>
+        </sequence>
+    </template>
+    <template name="NGTSTransactionRankingByIndustry" id ="3104">
+        <string name="MessageType" id="35"><constant value="UA3104"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <int64 name="MarkettotalValueTraded" id="10052" windid="59" decimalPlaces="5" presence="optional"><default/></int64>
+        <sequence name="Rankings" windid="603" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"/>
+            <int32 name="Ranking" id="10050"><increment/></int32>
+            <string name="IndustryCode" id="10049"/>
+            <int64 name="IndustryTotalValueTraded" id="10053" decimalPlaces="5"/>
+            <sequence name="TotalValueTradedRankings" presence="optional">
+                <length name="NoTotalValueTradedRankings" id="10051" presence="optional"/>
+                <int32 name="Ranking" id="10046"/>
+                <string name="SecurityID" id="48"/>
+                <int64 name="TotalValueTraded" id="8504"  decimalPlaces="5"/>
+            </sequence>
+        </sequence>
+    </template>
+    <template name="NGTSSingleOrderCancellationRanking" id="3105">
+        <string name="MessageType" id="35"><constant value="UA3105"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <sequence name="Rankings" windid="604" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"/>
+            <int32 name="Ranking" id="10046"/>
+            <string name="SecurityID" id="48"/>
+            <int32 name="OrderEntryTime" id="8500"/>
+            <int64 name="Quantity" id="53" decimalPlaces="3"/>
+            <int32 name="Price" id="44" decimalPlaces="3"/>
+        </sequence>
+    </template>
+    <template name="NGTSConsolidatedOrderCancellationRanking" id="3106">
+        <string name="MessageType" id="35"><constant value="UA3106"/></string>
+        <int32 name="DataTimeStamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="CFICode" id="461" windid="630"><copy/></string>
+        <string name="SecuritySubType" id="762" windid="631"><copy/></string>
+        <sequence name="Rankings" windid="605" presence="optional">
+            <length name="NoRankings" id="10045" presence="optional"/>
+            <int32 name="Ranking" id="10046"/>
+            <string name="SecurityID" id="48"/>
+            <int64 name="TotalWithdrawnQty" id="10054" decimalPlaces="3"/>
+        </sequence>
+    </template>
+    <template name="NGTSIndex" id="3113">
+        <string name="MessageType" id="35"><constant value="UA3113"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int64 name="PreCloseIndex" id="10007" windid="632" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="OpenIndex" id="10006" windid="5" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="Turnover" id="10118" windid="59" presence="optional" decimalPlaces="1"><default/></int64>
+        <int64 name="HighIndex" id="10009" windid="6" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="LowIndex" id="10010" windid="7" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="LastIndex" id="10008" windid="3" presence="optional" decimalPlaces="5"><default/></int64>
+        <int32 name="TradeTime" id="10013" windid="2" presence="optional"><default/></int32>
+        <int64 name="TotalVolumeTraded" id="387" windid="8" presence="optional" decimalPlaces="5"><default/></int64>
+        <int64 name="CloseIndex" id="10204" windid="645" presence="optional" decimalPlaces="5"><default/></int64>
+    </template>
+    <template name="NGTSMarketOverview" id="3115">
+        <string name="MessageType" id="35"><constant value="UA3115"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130" presence="optional"/>
+        <int32 name="OrigTime" id="42" windid="633" presence="optional"><default/></int32>
+        <int32 name="OrigDate" id="10003" windid="634" presence="optional"><default/></int32>
+    </template>
+    <template name="NGTSOrderQueue" id="3111">
+        <string name="MessageType" id="35"><constant value="UA3111"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="Side" id="54" windid="629"><copy/></string>
+        <string name="SecurityID" id="48" windid="130"></string>
+        <int32 name="ImageStatus" id="10146" windid="635"><copy/></int32>
+        <sequence name="PriceLevel" windid="606" presence="optional">
+            <length name="NoPriceLevel" id="10063" presence="optional"/>
+            <int32 name="PriceLeveOperator" id="10147" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" decimalPlaces="3"/>
+            <int32 name="NumOrders" id="10067"/>
+            <sequence name="NoOrders" presence="optional">
+                <length name="Orders" id="73" presence="optional"/>
+                <int32 name="OrderQueueOperator" id="10148" presence="optional"><default/></int32>
+                <int32 name="OrderQueueOperatorEntryID" id="10149" presence="optional"><default/></int32>
+                <int64 name="OrderQty" id="38" presence="optional" decimalPlaces="3"><default/></int64>
+            </sequence>
+        </sequence>
+    </template>
+    <template name="NGTSMarketOrderSummary" id="3112">
+        <string name="MessageType" id="35"><constant value="UA3112"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"></string>
+        <int64 name="NumBidOrders" id="10070" windid="636" presence="optional" decimalPlaces="3"><default/></int64>
+        <int32 name="BidLevelStatus" id="10143" windid="637" presence="optional"><default/></int32>
+        <sequence name="BidLevels" windid="607" presence="optional">
+            <length name="NoBidLevel" id="10068" presence="optional"/>
+            <int32 name="Operator" id="10145" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" presence="optional" decimalPlaces="3"><default/></int32>
+            <int64 name="OrderQty" id="38" presence="optional" decimalPlaces="3"><default/></int64>
+            <int32 name="NumOrders" id="10067" presence="optional"><default/></int32>
+        </sequence>
+        <int64 name="NumOfferOrders" id="10071" windid="638" presence="optional" decimalPlaces="3"><default/></int64>
+        <int32 name="OfferLevelStatus" id="10144" windid="639" presence="optional"><default/></int32>
+        <sequence name="OfferLevels" windid="608" presence="optional">
+            <length name="NoOfferLevel" id="10069" presence="optional"/>
+            <int32 name="Operator" id="10145" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" presence="optional" decimalPlaces="3"><default/></int32>
+            <int64 name="OrderQty" id="38" presence="optional" decimalPlaces="3"><default/></int64>
+            <int32 name="NumOrders" id="10067" presence="optional"><default/></int32>
+        </sequence>
+    </template>
+    <template name="NGTSVirtualAuctionPrice" id="3107">
+        <string name="MessageType" id="35"><constant value="UA3107"/></string>
+        <int32 name="DataTimestamp" id="10178" windid="622"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+        <string name="SecurityID" id="48" windid="130"/>
+        <int32 name="Price" id="44" windid="640" decimalPlaces="3" presence="optional"/>
+        <int64 name="VirtualAuctionQty" id="10127" windid="641" decimalPlaces="3" presence="optional"/>
+        <int64 name="LeavesQty" id="151" windid="642" decimalPlaces="3" presence="optional"/>
+        <string name="Side" id="54" windid="629" presence="optional"/>
+    </template>
+    <template name="CSIIndexBasic" id="4301">
+        <string name="MessageType" id="35"><constant value="UA4301"/></string>
+    	  <int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+    		<int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+    		<string name="SecurityID" id="48" windid="130"/>
+    		<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<string name="MarketCode" id="10152" windid="644"/>
+				<int64 name="LastIndex" id="10008" windid="3" decimalPlaces="4"/>
+				<int64 name="OpenIndex" id="10006" windid="5" decimalPlaces="4"/>
+				<int64 name="HighIndex" id="10009" windid="6" decimalPlaces="4"/>
+				<int64 name="LowIndex" id="10010" windid="7" decimalPlaces="4"/>
+				<int64 name="CloseIndex" id="10007" windid="670" decimalPlaces="4"/>
+				<int64 name="PreviousCloseIndex" id="10154" windid="632" decimalPlaces="4"/>
+				<int64 name="NetChange" id="10141" windid="646" decimalPlaces="4"/>
+				<int64 name="PerChange" id="10129" windid="647" decimalPlaces="4"/>
+				<int64 name="TotalVolumeTraded" id="387" windid="8"/>
+				<int64 name="TotalValueTraded" id="8504" windid="59" decimalPlaces="5"/>
+				<int64 name="CurrencyRate" id="10155" windid="648" decimalPlaces="4"/>
+				<string name="CurrencyCode" id="10156" windid="649"/>
+				<int32 name="DisplayOrder" id="10157" windid="650"/>
+				<int64 name="PreviousCloseIndex2" id="10163" windid="651" decimalPlaces="4"/>
+				<int64 name="PreviousCloseIndex3" id="10164" windid="652" decimalPlaces="4"/>
+    </template>
+    <template name="CSIIndexComponentBasic" id="4302">
+	    	<string name="MessageType" id="35"><constant value="UA4302"/></string>
+	    	<int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+	    	<int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<string name="Component" id="10158" windid="653"/>
+				<string name="ComponentSymbol" id="10159" windid="654" charset="unicode"/>
+				<int32 name="Weighting" id="10160" windid="655" decimalPlaces="5"/>
+				<int64 name="LastIndex" id="10008" windid="3" decimalPlaces="4"/>
+				<int64 name="Contribution" id="10161" windid="656" decimalPlaces="4"/>
+    </template>
+    <template name="CSIETVBasic" id="4303">
+	    	<string name="MessageType" id="35"><constant value="UA4303"/></string>
+	    	<int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+	    	<int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<string name="MarketCode" id="10152" windid="644"/>
+				<int64 name="NAV" id="10162" windid="657" decimalPlaces="4"/>
+    </template>
+    <template name="CSIIndexPlus" id="4401">
+	    	<string name="MessageType" id="35"><constant value="UA4401"/></string>
+	    	<int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+	    	<int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<string name="MarketCode" id="10152" windid="644"/>
+				<int64 name="LastIndex" id="10008" windid="3" decimalPlaces="4"/>
+				<int64 name="OpenIndex" id="10006" windid="5" decimalPlaces="4"/>
+				<int64 name="HighIndex" id="10009" windid="6" decimalPlaces="4"/>
+				<int64 name="LowIndex" id="10010" windid="7" decimalPlaces="4"/>
+				<int64 name="CloseIndex" id="10007" windid="670" decimalPlaces="4"/>
+				<int64 name="PreviousCloseIndex" id="10154" windid="632" decimalPlaces="4"/>
+				<int64 name="NetChange" id="10141" windid="646" decimalPlaces="4"/>
+				<int64 name="PerChange" id="10129" windid="647" decimalPlaces="4"/>
+				<int64 name="TotalVolumeTraded" id="387" windid="8"/>
+				<int64 name="TotalValueTraded" id="8504" windid="59" decimalPlaces="5"/>
+				<int64 name="CurrencyRate" id="10155" windid="648" decimalPlaces="4"/>
+				<string name="CurrencyCode" id="10156" windid="649"/>
+				<int32 name="DisplayOrder" id="10157" windid="650"/>
+				<int64 name="PreviousCloseIndex2" id="10163" windid="651" decimalPlaces="4"/>
+				<int64 name="PreviousCloseIndex3" id="10164" windid="652" decimalPlaces="4"/>
+    </template>
+    <template name="CSIIndexComponentPlus" id="4402">
+	    	<string name="MessageType" id="35"><constant value="UA4402"/></string>
+	    	<int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+	    	<int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<string name="Component" id="10158" windid="653"/>
+				<string name="ComponentSymbol" id="10159" windid="654" charset="unicode"/>
+				<int32 name="Weighting" id="10160" windid="655" decimalPlaces="5"/>
+				<int64 name="LastIndex" id="10008" windid="3" decimalPlaces="4"/>
+				<int64 name="Contribution" id="10161" windid="656" decimalPlaces="4"/>
+    </template>
+    <template name="CSIETFPlus" id="4403">
+        <string name="MessageType" id="35"><constant value="UA4403"/></string>
+	    	<int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+	    	<int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+				<string name="MarketCode" id="10152" windid="644"/>
+				<int64 name="NAV" id="10162" windid="657" decimalPlaces="4"/>
+    </template>
+    <template name="Level1Data" id="5102">
+	    	<string name="MessageType" id="35"><constant value="UA5102"/></string>
+	    	<int32 name="DataTimestamp" id="10178" windid="622" presence="optional"><copy/></int32>
+        <int32 name="DataStatus" id="10121" windid="620" presence="optional"><default/></int32>
+				<string name="SecurityID" id="48" windid="130"/>
+				<string name="Symbol" id="55" windid="643" charset="unicode"/>
+        <int32 name="PreClosePx" id="140" windid="4" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="OpenPx" id="10018" windid="5" presence="optional" decimalPlaces="3"><default/></int32>
+				<int32 name="HighPx" id="332" windid="6" presence="optional" decimalPlaces="3"><default/></int32>
+				<int32 name="LowPx" id="333" windid="7" presence="optional" decimalPlaces="3"><default/></int32>
+        <int32 name="LastPx" id="31" windid="3" presence="optional" decimalPlaces="3"><default/></int32>
+        <sequence name="BidPriceLevel" windid="609" presence="optional">
+					  <length name="NoBidPriceLevel" id="10068" presence="optional"/>
+					  <int64 name="BidSize" id="134"/>
+					  <int32 name="BidPx" id="132" decimalPlaces="3"/>
+				</sequence>
+				<sequence name="OfferPriceLevel" windid="610" presence="optional">
+					  <length name="NoOfferPriceLevel" id="10069" presence="optional"/>
+					  <int64 name="OfferSize" id="135"/>
+					  <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+        </sequence>
+			  <int64 name="TotalVolumeTrade" id="387" windid="8" presence="optional"><default/></int64>
+			  <int64 name="TotalValueTrade" id="8504" windid="59" presence="optional"><default/></int64>
+			  <int32 name="PE" id="10128" windid="658" presence="optional" decimalPlaces="3"><default/></int32>
+			  <int32 name="DeletionIndicator" id="10130" windid="659" presence="optional"><default/></int32>
+   	</template>
+</templates>

@@ -1,0 +1,26 @@
+﻿生成启动时间为 2011/9/28 23:33:10。
+     1>项目“E:\学习\WMDF\Src\V10\project\NetModule.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“..\bin\Debug\Obj\NetModule.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"..\..\lib\boost\include\boost-1_46" /ZI /nologo /W3 /WX- /Od /Oy- /D DLL_EXPORT /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NETMODULE_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\bin\Debug\Obj\\" /Fd"..\bin\Debug\Obj\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\lib\netmodule\client.cpp ..\..\lib\netmodule\client_impl.cpp ..\..\lib\netmodule\conn_manager.cpp ..\..\lib\netmodule\connection.cpp ..\..\lib\netmodule\message_factory.cpp ..\..\lib\netmodule\net_module.cpp ..\..\lib\netmodule\server.cpp ..\..\lib\netmodule\server_impl.cpp
+         server_impl.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\server_impl.h(4): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         server.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\server_impl.h(4): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         net_module.cpp
+         message_factory.cpp
+         connection.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\connection.h(5): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         conn_manager.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\conn_manager.cpp(4): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         client_impl.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\client_impl.h(6): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         client.cpp
+     1>e:\学习\wmdf\src\lib\netmodule\client_impl.h(6): fatal error C1083: 无法打开包括文件:“boost/asio.hpp”: No such file or directory
+         正在生成代码...
+     1>已完成生成项目“E:\学习\WMDF\Src\V10\project\NetModule.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:03.08

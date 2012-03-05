@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="api">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{167cfc99-0287-4e9c-8523-2f332b2d41d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\system">
+      <UniqueIdentifier>{11f3d467-f69e-40fb-bbe7-9494215d69db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\sse">
+      <UniqueIdentifier>{e808d88c-27b1-4399-a065-46b05ae87395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\szse">
+      <UniqueIdentifier>{8a1b6ddb-a17c-48bf-98d5-f579a289fa53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\cffe">
+      <UniqueIdentifier>{a41df1c7-05ec-47fb-a6a4-9d4b403460b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\level1">
+      <UniqueIdentifier>{5053fad3-9b0e-4c8c-a914-5a80192583db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\monitor">
+      <UniqueIdentifier>{cb93f076-220c-47da-86da-410995390324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\dce">
+      <UniqueIdentifier>{0f5dc6fe-d615-4266-a91f-59b78e920b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\shfe">
+      <UniqueIdentifier>{31de3704-dd14-4c58-9453-fae064df356b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\czce">
+      <UniqueIdentifier>{81e332b9-a66d-4a15-9621-2e76e0b2fc13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="product">
+      <UniqueIdentifier>{6eba54f0-aad1-494b-9c7b-58db65826078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5bea95c9-0d9e-49b0-8c41-b0770c601e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment">
+      <UniqueIdentifier>{6be60119-279f-4f90-9781-2593b7bbd1a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialization">
+      <UniqueIdentifier>{8ca2afca-2eae-49ef-8056-7b43c082d6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{a4837c18-dbae-4c15-9539-f7b5a9830892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="session">
+      <UniqueIdentifier>{9c3f97ef-394a-4171-80ba-2758539e6861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netmodule">
+      <UniqueIdentifier>{f15bf163-d741-4278-9038-1e8f8655bcbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\api\api_define.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\api\api_factory.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\api\api_version.h">
+      <Filter>api</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_message_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\codec_buffer.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_message_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\header_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\market_header_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\mdf_message.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\message_codec.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\protocol_description.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\protocol_processor.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\protocol_processor_center.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\protocol_processor_controller.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\protocol_processor_factory.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_heart_beat.h">
+      <Filter>protocol\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_login_request.h">
+      <Filter>protocol\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_login_response.h">
+      <Filter>protocol\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_logout.h">
+      <Filter>protocol\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\system_header_codec.h">
+      <Filter>protocol\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_auction_price.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_market_data.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_order_queue.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_overview.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_trans.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_auction_price.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_market_data.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_order_queue.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_overview.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_trans.h">
+      <Filter>protocol\sse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_szl2_orders.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_szl2_market_data.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_szl2_orders.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_szl2_trans.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_market_data.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_order_queue.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_orders.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_trans.h">
+      <Filter>protocol\szse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_cffel1_market_data.h">
+      <Filter>protocol\cffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_cffel2_market_data.h">
+      <Filter>protocol\cffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_cffel1_market_data.h">
+      <Filter>protocol\cffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_cffel2_market_data.h">
+      <Filter>protocol\cffe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_shszl1_market_data.h">
+      <Filter>protocol\level1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shszl1_market_data.h">
+      <Filter>protocol\level1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_client_status.h">
+      <Filter>protocol\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\binary_codec_transfer_stat.h">
+      <Filter>protocol\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\monitor_header_codec.h">
+      <Filter>protocol\monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_dcel1_market_data.h">
+      <Filter>protocol\dce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_shfel1_market_data.h">
+      <Filter>protocol\shfe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\fast_codec_czcel1_market_data.h">
+      <Filter>protocol\czce</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\message_descripter.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_descripter.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_manager.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_source.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\version_descripter.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\date_time.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\time.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\wmdf_api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\wmdf_structs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\application_directory.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\atomic_counter.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\atomicops.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\directory.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\file.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\splitter.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\strutils.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\utils.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\clonable.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\data_reader.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\data_writer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\file_seek.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\memento.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\memento_reader.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\memento_writer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\persistable.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\serializer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\wmdf_file.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\session\feed_client.h">
+      <Filter>session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\session\feed_connection.h">
+      <Filter>session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\atomic_ptr.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\client.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\client_impl.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\conn_manager.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\connection.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\error.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\event_factory.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\io_buffer.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\lock_free_queue.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\message_factory.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\message_id_def.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\net_module.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\pipe.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\queue.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\relay_connection.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\server.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\server_impl.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\service.h">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\netmodule\stdint.hpp">
+      <Filter>netmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\monitor\logger.h">
+      <Filter>protocol\monitor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\api\api_factory.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\api\api_version.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\api\wmdf_api.cpp">
+      <Filter>api</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\codec_buffer.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_message_codec.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\market_header_codec.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\mdf_message.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\protocol_description.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\protocol_processor.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\protocol_processor_center.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\protocol_processor_controller.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\protocol_processor_factory.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_heart_beat.cpp">
+      <Filter>protocol\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_login_request.cpp">
+      <Filter>protocol\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_login_response.cpp">
+      <Filter>protocol\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_logout.cpp">
+      <Filter>protocol\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\system_header_codec.cpp">
+      <Filter>protocol\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_auction_price.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_market_data.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_order_queue.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_overview.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_trans.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_auction_price.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_market_data.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_order_queue.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_overview.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_trans.cpp">
+      <Filter>protocol\sse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_szl2_orders.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_szl2_market_data.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_szl2_orders.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_szl2_trans.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_market_data.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_order_queue.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_orders.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_trans.cpp">
+      <Filter>protocol\szse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_cffel1_market_data.cpp">
+      <Filter>protocol\cffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_cffel2_market_data.cpp">
+      <Filter>protocol\cffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_cffel1_market_data.cpp">
+      <Filter>protocol\cffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_cffel2_market_data.cpp">
+      <Filter>protocol\cffe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_shszl1_market_data.cpp">
+      <Filter>protocol\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shszl1_market_data.cpp">
+      <Filter>protocol\level1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_client_status.cpp">
+      <Filter>protocol\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\binary_codec_transfer_stat.cpp">
+      <Filter>protocol\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\monitor_header_codec.cpp">
+      <Filter>protocol\monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_dcel1_market_data.cpp">
+      <Filter>protocol\dce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_shfel1_market_data.cpp">
+      <Filter>protocol\shfe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\fast_codec_czcel1_market_data.cpp">
+      <Filter>protocol\czce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\message_descripter.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_descripter.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_manager.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_source.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\version_descripter.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\application_directory.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\directory.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\file.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\strutils.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\utils.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\clonable.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\data_reader.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\data_writer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\file_seek.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\memento.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\memento_reader.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\memento_writer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\persistable.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\serializer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\wmdf_file.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\session\feed_client.cpp">
+      <Filter>session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\session\feed_connection.cpp">
+      <Filter>session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\client.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\client_impl.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\conn_manager.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\connection.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\message_factory.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\net_module.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\server.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\netmodule\server_impl.cpp">
+      <Filter>netmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\monitor\logger.cpp">
+      <Filter>protocol\monitor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

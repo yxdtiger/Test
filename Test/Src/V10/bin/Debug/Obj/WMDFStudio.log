@@ -1,0 +1,121 @@
+﻿生成启动时间为 2011/9/28 23:31:04。
+     1>项目“E:\学习\WMDF\Src\V10\project\WMDFStudio.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“..\bin\Debug\Obj\WMDFStudio.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         d:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"..\..\lib\boost\include\boost-1_46" /I..\..\lib\serialization /I..\..\lib\tinyxml /I..\..\lib\netmodule /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /D _AFXDLL /Gm /EHa /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\bin\Debug\Obj\\" /Fd"..\bin\Debug\Obj\vc90.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\usermanager\authorized_product.cpp ..\src\usermanager\user.cpp ..\src\usermanager\user_manager.cpp ..\src\protocol\protocol_description.cpp ..\..\lib\serialization\data_reader.cpp ..\..\lib\serialization\data_writer.cpp ..\..\lib\serialization\file_seek.cpp ..\..\lib\serialization\wmdf_file.cpp ..\src\studio\common\ReportListCtrl.cpp ..\src\studio\common\CheckBoxAutoCheckTreeCtrl.cpp ..\src\studio\common\CheckBoxTreeCtrl.cpp ..\src\studio\common\ExpandTreeCtrl.cpp ..\src\studio\common\AddOrModifyDialog.cpp ..\src\studio\common\BeautifulDialog.cpp ..\src\studio\common\UserSerachDlg.cpp ..\src\studio\common\BeautifulButton.cpp ..\src\studio\common\FlashEdit.cpp ..\src\studio\common\UIDateTime.cpp ..\src\studio\common\UIUilties.cpp ..\src\studio\common\ValueTranslation.cpp ..\src\studio\common\WordTranslation.cpp ..\src\studio\main_frame\ChildFrm.cpp ..\src\studio\main_frame\MainFrm.cpp ..\src\studio\main_frame\StdAfx.cpp ..\src\studio\main_frame\WMDF_Studio.cpp ..\src\studio\management_customer\ManageClientDialog.cpp ..\src\studio\management_customer\ManageClientListCtrl.cpp ..\src\studio\management_customer\ManageCustomerTreeCtrl.cpp ..\src\studio\management_customer\UserAddDlg.cpp ..\src\studio\management_customer\UserAddProductDeadlineDlg.cpp ..\src\studio\management_customer\UserDeleteDlg.cpp ..\src\studio\management_customer\UserModifyDlg.cpp ..\src\studio\reference_product\ReferenceProductView.cpp ..\src\studio\management_product_source\ManageProductSourceAddorModifyBackupSourceDialog.cpp ..\src\studio\management_product_source\ManageProductSourceAddorModifyMarketTimeDialog.cpp ..\src\studio\management_product_source\ManageProductSourceAddorModifyProductSourceDialog.cpp ..\src\studio\management_product_source\ManageProductSourceAddorModifySubscribedProductDialog.cpp ..\src\studio\management_product_source\ManageProductSourceDialog.cpp ..\src\studio\management_product_source\ManageProductSourceSelectDialog.cpp ..\src\studio\management_system_config\ManagementSystemConfighDlg.cpp ..\src\studio\management_product\ManageProductAddMessageDescripterDialog.cpp ..\src\studio\management_product\ManageProductAddProductDescripterDialog.cpp ..\src\studio\management_product\ManageProductAddVersionDescripterDialog.cpp ..\src\studio\management_product\ManageProductDialog.cpp ..\src\studio\reference_struct\ReferenceAPIandStructView.cpp ..\src\product\message_descripter.cpp ..\src\product\product_descripter.cpp ..\src\product\product_manager.cpp ..\src\product\product_source.cpp ..\src\product\product_source_manager.cpp ..\src\product\version_descripter.cpp ..\src\environment\application_directory.cpp ..\src\environment\directory.cpp ..\src\environment\file.cpp ..\src\environment\system_config.cpp ..\src\environment\utils.cpp
+         utils.cpp
+     1>e:\学习\wmdf\src\v10\src\protocol\mdf_message.h(4): fatal error C1083: 无法打开包括文件:“boost/shared_ptr.hpp”: No such file or directory
+         system_config.cpp
+         file.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\file.cpp(2): fatal error C1083: 无法打开包括文件:“boost/filesystem/operations.hpp”: No such file or directory
+         directory.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\directory.cpp(2): fatal error C1083: 无法打开包括文件:“boost/filesystem/operations.hpp”: No such file or directory
+         application_directory.cpp
+         version_descripter.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         product_source_manager.cpp
+         product_source.cpp
+         product_manager.cpp
+         product_descripter.cpp
+         message_descripter.cpp
+         ReferenceAPIandStructView.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\reference_struct\ReferenceAPIandStructView.cpp”: No such file or directory
+         ManageProductDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product\ManageProductDialog.cpp”: No such file or directory
+         ManageProductAddVersionDescripterDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product\ManageProductAddVersionDescripterDialog.cpp”: No such file or directory
+         ManageProductAddProductDescripterDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product\ManageProductAddProductDescripterDialog.cpp”: No such file or directory
+         ManageProductAddMessageDescripterDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product\ManageProductAddMessageDescripterDialog.cpp”: No such file or directory
+         ManagementSystemConfighDlg.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_system_config\ManagementSystemConfighDlg.cpp”: No such file or directory
+         ManageProductSourceSelectDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product_source\ManageProductSourceSelectDialog.cpp”: No such file or directory
+         ManageProductSourceDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product_source\ManageProductSourceDialog.cpp”: No such file or directory
+         ManageProductSourceAddorModifySubscribedProductDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product_source\ManageProductSourceAddorModifySubscribedProductDialog.cpp”: No such file or directory
+         正在生成代码...
+         正在编译...
+         ManageProductSourceAddorModifyProductSourceDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product_source\ManageProductSourceAddorModifyProductSourceDialog.cpp”: No such file or directory
+         ManageProductSourceAddorModifyMarketTimeDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product_source\ManageProductSourceAddorModifyMarketTimeDialog.cpp”: No such file or directory
+         ManageProductSourceAddorModifyBackupSourceDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_product_source\ManageProductSourceAddorModifyBackupSourceDialog.cpp”: No such file or directory
+         ReferenceProductView.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\reference_product\ReferenceProductView.cpp”: No such file or directory
+         UserModifyDlg.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\UserModifyDlg.cpp”: No such file or directory
+         UserDeleteDlg.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\UserDeleteDlg.cpp”: No such file or directory
+         UserAddProductDeadlineDlg.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\UserAddProductDeadlineDlg.cpp”: No such file or directory
+         UserAddDlg.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\UserAddDlg.cpp”: No such file or directory
+         ManageCustomerTreeCtrl.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\ManageCustomerTreeCtrl.cpp”: No such file or directory
+         ManageClientListCtrl.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\ManageClientListCtrl.cpp”: No such file or directory
+         ManageClientDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\management_customer\ManageClientDialog.cpp”: No such file or directory
+         WMDF_Studio.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\main_frame\WMDF_Studio.cpp”: No such file or directory
+         StdAfx.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\main_frame\StdAfx.cpp”: No such file or directory
+         MainFrm.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\main_frame\MainFrm.cpp”: No such file or directory
+         ChildFrm.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\main_frame\ChildFrm.cpp”: No such file or directory
+         WordTranslation.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\WordTranslation.cpp”: No such file or directory
+         ValueTranslation.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\ValueTranslation.cpp”: No such file or directory
+         UIUilties.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\UIUilties.cpp”: No such file or directory
+         UIDateTime.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\UIDateTime.cpp”: No such file or directory
+         FlashEdit.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\FlashEdit.cpp”: No such file or directory
+         正在生成代码...
+         正在编译...
+         BeautifulButton.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\BeautifulButton.cpp”: No such file or directory
+         UserSerachDlg.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\UserSerachDlg.cpp”: No such file or directory
+         BeautifulDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\BeautifulDialog.cpp”: No such file or directory
+         AddOrModifyDialog.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\AddOrModifyDialog.cpp”: No such file or directory
+         ExpandTreeCtrl.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\ExpandTreeCtrl.cpp”: No such file or directory
+         CheckBoxTreeCtrl.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\CheckBoxTreeCtrl.cpp”: No such file or directory
+         CheckBoxAutoCheckTreeCtrl.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\CheckBoxAutoCheckTreeCtrl.cpp”: No such file or directory
+         ReportListCtrl.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\src\studio\common\ReportListCtrl.cpp”: No such file or directory
+         wmdf_file.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\..\lib\serialization\wmdf_file.cpp”: No such file or directory
+         file_seek.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\..\lib\serialization\file_seek.cpp”: No such file or directory
+         data_writer.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\..\lib\serialization\data_writer.cpp”: No such file or directory
+         data_reader.cpp
+     1>c1xx : fatal error C1083: 无法打开源文件:“..\..\lib\serialization\data_reader.cpp”: No such file or directory
+         protocol_description.cpp
+         user_manager.cpp
+     1>e:\学习\wmdf\src\v10\src\usermanager\user_manager.h(11): fatal error C1083: 无法打开包括文件:“boost/thread/mutex.hpp”: No such file or directory
+         user.cpp
+     1>e:\学习\wmdf\src\v10\src\environment\strutils.h(48): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“vsprintf”的声明
+         authorized_product.cpp
+         正在生成代码...
+     1>已完成生成项目“E:\学习\WMDF\Src\V10\project\WMDFStudio.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:14.24

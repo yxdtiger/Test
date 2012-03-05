@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="usermanager">
+      <UniqueIdentifier>{b5b72dfc-1855-43c3-9802-2575d10198e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{9eda61a1-9e4d-4499-b265-bdd243f03b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{ea5b2ba8-2f87-4b62-86f7-ba3fd3c9c203}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{37f5af2d-edca-40f7-8bbe-9f0478e54012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialization">
+      <UniqueIdentifier>{3b3a1c9d-ea6f-4f55-bd33-b785b736f6ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio">
+      <UniqueIdentifier>{7a693dc0-ad17-40b7-a881-2b7bf9b9381c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common">
+      <UniqueIdentifier>{e9a1ab29-138f-4662-ae32-688a05bfb10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_mfc_controls">
+      <UniqueIdentifier>{5f920ba8-0716-41ca-aaa7-11c3646cb784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_mfc_controls\listctrl">
+      <UniqueIdentifier>{14079903-ac1d-4f7d-9c72-72ab8b25d92d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_mfc_controls\treectrl">
+      <UniqueIdentifier>{4939d573-f33f-4480-9cb1-b2c9727d32aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_mfc_controls\dialog">
+      <UniqueIdentifier>{755ec5f6-3f05-42d9-bc5a-0d585b17f4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_mfc_controls\button">
+      <UniqueIdentifier>{98b6005a-d657-442d-a450-7428e2650422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_mfc_controls\edit">
+      <UniqueIdentifier>{81f077a2-0358-41d4-a810-eea0844c1ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\common\common_tools">
+      <UniqueIdentifier>{4a18662f-27ca-4dc5-82ea-7c34e0857ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\main_frame">
+      <UniqueIdentifier>{604215b5-f5a0-4d1e-a74b-faab33f6a953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\main_frame\res">
+      <UniqueIdentifier>{2503ee07-3170-4425-ba52-e1775878532b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\management_customer">
+      <UniqueIdentifier>{972c9c09-963c-431f-b6de-bd397b564d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\reference_product">
+      <UniqueIdentifier>{cea8826b-2353-42c9-a717-6a4aca24c566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\management_product_source">
+      <UniqueIdentifier>{fee010bb-5659-4c83-b284-56dada7e25ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\management_system_config">
+      <UniqueIdentifier>{dcf6c7ab-9137-4484-9c87-159a119f38cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\management_product">
+      <UniqueIdentifier>{7cc0d0cc-aec4-4bcd-88e9-0469d2a9a749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="studio\reference_struct">
+      <UniqueIdentifier>{f07fc5cc-b0ee-4014-8ec0-c073d572b267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="product">
+      <UniqueIdentifier>{6924ff97-a3f7-4584-9a9b-7ebb717115b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{09d2e35c-af97-4ab2-a532-64a1c05295bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="environment">
+      <UniqueIdentifier>{e89a073a-c8b9-4140-9b43-93a2546265e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\usermanager\authorized_product.cpp">
+      <Filter>usermanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\usermanager\user.cpp">
+      <Filter>usermanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\usermanager\user_manager.cpp">
+      <Filter>usermanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\protocol\protocol_description.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\clonable.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\data_reader.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\data_writer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\file_seek.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\memento.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\memento_reader.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\memento_writer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\persistable.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\serializer.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lib\serialization\wmdf_file.cpp">
+      <Filter>serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\ReportListCtrl.cpp">
+      <Filter>studio\common\common_mfc_controls\listctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\CheckBoxAutoCheckTreeCtrl.cpp">
+      <Filter>studio\common\common_mfc_controls\treectrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\CheckBoxTreeCtrl.cpp">
+      <Filter>studio\common\common_mfc_controls\treectrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\ExpandTreeCtrl.cpp">
+      <Filter>studio\common\common_mfc_controls\treectrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\AddOrModifyDialog.cpp">
+      <Filter>studio\common\common_mfc_controls\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\BeautifulDialog.cpp">
+      <Filter>studio\common\common_mfc_controls\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\UserSerachDlg.cpp">
+      <Filter>studio\common\common_mfc_controls\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\BeautifulButton.cpp">
+      <Filter>studio\common\common_mfc_controls\button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\FlashEdit.cpp">
+      <Filter>studio\common\common_mfc_controls\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\UIDateTime.cpp">
+      <Filter>studio\common\common_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\UIUilties.cpp">
+      <Filter>studio\common\common_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\ValueTranslation.cpp">
+      <Filter>studio\common\common_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\common\WordTranslation.cpp">
+      <Filter>studio\common\common_tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\main_frame\ChildFrm.cpp">
+      <Filter>studio\main_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\main_frame\MainFrm.cpp">
+      <Filter>studio\main_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\main_frame\StdAfx.cpp">
+      <Filter>studio\main_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\main_frame\WMDF_Studio.cpp">
+      <Filter>studio\main_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\ManageClientDialog.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\ManageClientListCtrl.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\ManageCustomerTreeCtrl.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\UserAddDlg.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\UserAddProductDeadlineDlg.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\UserDeleteDlg.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_customer\UserModifyDlg.cpp">
+      <Filter>studio\management_customer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\reference_product\ReferenceProductView.cpp">
+      <Filter>studio\reference_product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyBackupSourceDialog.cpp">
+      <Filter>studio\management_product_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyMarketTimeDialog.cpp">
+      <Filter>studio\management_product_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyProductSourceDialog.cpp">
+      <Filter>studio\management_product_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceAddorModifySubscribedProductDialog.cpp">
+      <Filter>studio\management_product_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceDialog.cpp">
+      <Filter>studio\management_product_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product_source\ManageProductSourceSelectDialog.cpp">
+      <Filter>studio\management_product_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_system_config\ManagementSystemConfighDlg.cpp">
+      <Filter>studio\management_system_config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product\ManageProductAddMessageDescripterDialog.cpp">
+      <Filter>studio\management_product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product\ManageProductAddProductDescripterDialog.cpp">
+      <Filter>studio\management_product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product\ManageProductAddVersionDescripterDialog.cpp">
+      <Filter>studio\management_product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\management_product\ManageProductDialog.cpp">
+      <Filter>studio\management_product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\studio\reference_struct\ReferenceAPIandStructView.cpp">
+      <Filter>studio\reference_struct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\message_descripter.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_descripter.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_manager.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_source.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\product_source_manager.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\product\version_descripter.cpp">
+      <Filter>product</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\application_directory.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\directory.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\file.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\system_config.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\environment\utils.cpp">
+      <Filter>environment</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\usermanager\authorized_product.h">
+      <Filter>usermanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\usermanager\user.h">
+      <Filter>usermanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\usermanager\user_manager.h">
+      <Filter>usermanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\tinyxml\tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\tinyxml\tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\protocol\protocol_description.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\clonable.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\data_reader.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\data_writer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\file_seek.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\memento.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\memento_reader.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\memento_writer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\persistable.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\serializer.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\serialization\wmdf_file.h">
+      <Filter>serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\ReportListCtrl.h">
+      <Filter>studio\common\common_mfc_controls\listctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\CheckBoxAutoCheckTreeCtrl.h">
+      <Filter>studio\common\common_mfc_controls\treectrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\CheckBoxTreeCtrl.h">
+      <Filter>studio\common\common_mfc_controls\treectrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\ExpandTreeCtrl.h">
+      <Filter>studio\common\common_mfc_controls\treectrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\AddOrModifyDialog.h">
+      <Filter>studio\common\common_mfc_controls\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\BeautifulDialog.h">
+      <Filter>studio\common\common_mfc_controls\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\UserSerachDlg.h">
+      <Filter>studio\common\common_mfc_controls\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\BeautifulButton.h">
+      <Filter>studio\common\common_mfc_controls\button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\FlashEdit.h">
+      <Filter>studio\common\common_mfc_controls\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\UIDateTime.h">
+      <Filter>studio\common\common_tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\UIUilties.h">
+      <Filter>studio\common\common_tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\ValueTranslation.h">
+      <Filter>studio\common\common_tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\common\WordTranslation.h">
+      <Filter>studio\common\common_tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\main_frame\ChildFrm.h">
+      <Filter>studio\main_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\main_frame\MainFrm.h">
+      <Filter>studio\main_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\main_frame\Resource.h">
+      <Filter>studio\main_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\main_frame\StdAfx.h">
+      <Filter>studio\main_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\main_frame\targetver.h">
+      <Filter>studio\main_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\main_frame\WMDF_Studio.h">
+      <Filter>studio\main_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\ManageClientDialog.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\ManageClientListCtrl.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\ManageCustomerTreeCtrl.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\UserAddDlg.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\UserAddProductDeadlineDlg.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\UserDeleteDlg.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_customer\UserModifyDlg.h">
+      <Filter>studio\management_customer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\reference_product\ReferenceProductView.h">
+      <Filter>studio\reference_product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyBackupSourceDialog.h">
+      <Filter>studio\management_product_source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyMarketTimeDialog.h">
+      <Filter>studio\management_product_source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifyProductSourceDialog.h">
+      <Filter>studio\management_product_source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceAddorModifySubscribedProductDialog.h">
+      <Filter>studio\management_product_source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceDialog.h">
+      <Filter>studio\management_product_source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product_source\ManageProductSourceSelectDialog.h">
+      <Filter>studio\management_product_source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_system_config\ManagementSystemConfighDlg.h">
+      <Filter>studio\management_system_config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product\ManageProductAddMessageDescripterDialog.h">
+      <Filter>studio\management_product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product\ManageProductAddProductDescripterDialog.h">
+      <Filter>studio\management_product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product\ManageProductAddVersionDescripterDialog.h">
+      <Filter>studio\management_product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\management_product\ManageProductDialog.h">
+      <Filter>studio\management_product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\studio\reference_struct\ReferenceAPIandStructView.h">
+      <Filter>studio\reference_struct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\message_descripter.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_descripter.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_manager.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_source.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\product_source_manager.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\product\version_descripter.h">
+      <Filter>product</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\date_time.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\time.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\wmdf_api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\wmdf_structs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\application_directory.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\atomic_counter.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\atomicops.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\directory.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\file.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\splitter.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\system_config.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\environment\utils.h">
+      <Filter>environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\studio\main_frame\res\1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\3.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\4.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\BackGround.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\BITMAPAUDVIEW.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\bmp00001.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\BottomBand.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\cancle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\canlelbig.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\closebtn.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\closehotbutton.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\HELP.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\input.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\inputviewuser.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\LEDOFF.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\LEDON.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\LeftBand.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\LeftTitle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Log.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\madecert.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\maxbutton.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\maxhotbutton.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\MidTitle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\minbutton.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\minhotbutton.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\NO.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\ok.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\pass.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\printok.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\RightBand.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\RightTitle.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_log.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_monitor_user.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_overall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_Product.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_reference_apiandproduct_ssel1_snapshot.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_reference_product.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Test_Securities.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\treeCtrlIco.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\view.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\viewmade.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\WMDF_Studio.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\WMDF_Studio.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\信息.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\关于.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\制作.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\历史.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\审核.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\注销.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\申请.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\登录.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\src\studio\main_frame\res\Thumbs.db">
+      <Filter>studio\main_frame\res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\studio\main_frame\WMDF_Studio.rc">
+      <Filter>studio\main_frame</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

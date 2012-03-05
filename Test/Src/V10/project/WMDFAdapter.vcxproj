@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF0FF1FE-87C4-4BF9-9CF4-85B91B1237E6}</ProjectGuid>
+    <RootNamespace>WMDFAdapter</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\Debug\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\bin\Debug\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\Release\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\bin\Release\Obj\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\lib\boost\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;..\..\lib\zlib\include;..\..\lib\feedhandler\sse\ia32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt-gd.lib;libboost_system-vc90-mt-gd.lib;libboost_filesystem-vc90-mt-gd.lib;Decoder_SSE_L2x86.lib;zdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)feedadapter.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\boost\lib;..\..\lib\zlib\lib\;..\..\lib\feedhandler\sse\ia32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\lib\boost_x64\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;..\..\lib\zlib\include;..\..\lib\feedhandler\sse\intel64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt-gd.lib;libboost_system-vc90-mt-gd.lib;libboost_filesystem-vc90-mt-gd.lib;zlibstat.lib;Decoder_SSE.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)feedadapter_x64.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\boost_x64\lib;..\..\lib\zlib\lib\x64;..\..\lib\feedhandler\sse\intel64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\lib\boost\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;..\..\lib\zlib\include;..\..\lib\feedhandler\sse\ia32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt.lib;libboost_system-vc90-mt.lib;libboost_filesystem-vc90-mt.lib;zdll.lib;Decoder_SSE_L2x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)feedadapter.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\boost\lib;..\..\lib\zlib\lib\;..\..\lib\feedhandler\sse\ia32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\lib\boost_x64\include\boost-1_46;..\..\lib\serialization;..\..\lib\tinyxml;..\..\lib\netmodule;..\..\lib\zlib\include;..\..\lib\feedhandler\sse\intel64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libboost_thread-vc90-mt.lib;libboost_system-vc90-mt.lib;libboost_filesystem-vc90-mt.lib;zlibstat.lib;Decoder_SSE.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)feedadapter_x64.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\lib\boost_x64\lib;..\..\lib\zlib\lib\x64;..\..\lib\feedhandler\sse\intel64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\adapter\stdafx.cpp" />
+    <ClCompile Include="..\src\adapter\WMDFAdapter.cpp" />
+    <ClCompile Include="..\src\product\feed_product_replayer.cpp" />
+    <ClCompile Include="..\src\product\message_descripter.cpp" />
+    <ClCompile Include="..\src\product\product_adapter_factory.cpp" />
+    <ClCompile Include="..\src\product\product_descripter.cpp" />
+    <ClCompile Include="..\src\product\product_manager.cpp" />
+    <ClCompile Include="..\src\product\product_source.cpp" />
+    <ClCompile Include="..\src\product\product_source_manager.cpp" />
+    <ClCompile Include="..\src\product\rawdata_product_replayer.cpp" />
+    <ClCompile Include="..\src\product\replay_adapter.cpp" />
+    <ClCompile Include="..\src\product\version_descripter.cpp" />
+    <ClCompile Include="..\src\product\adapter\cffe_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\czce_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\shfe_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\dce_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\fx_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\relay_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\simulator_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\sseszse_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\ssel1_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\ssel2_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\szsel1_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\szsel2_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\rawdata_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\rawdata_manager.cpp" />
+    <ClCompile Include="..\src\product\adapter\rawdata_ssel2_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\adapter_guard.cpp" />
+    <ClCompile Include="..\src\product\adapter\iproduct_adapter.cpp" />
+    <ClCompile Include="..\src\product\adapter\product_adapter.cpp" />
+    <ClCompile Include="..\src\product\decoder\dataDecoder.cpp" />
+    <ClCompile Include="..\src\product\decoder\index_transfer.cpp" />
+    <ClCompile Include="..\src\product\decoder\indexBase.cpp" />
+    <ClCompile Include="..\src\product\decoder\l2marketsnapshotcontainer.cpp" />
+    <ClCompile Include="..\src\product\decoder\l2marketsnapshotsender.cpp" />
+    <ClCompile Include="..\src\product\decoder\packetDecoder.cpp" />
+    <ClCompile Include="..\src\product\decoder\securityContainer.cpp" />
+    <ClCompile Include="..\src\product\decoder\securityIndex.cpp" />
+    <ClCompile Include="..\src\product\decoder\utilsString.cpp" />
+    <ClCompile Include="..\src\product\decoder\windCodeCodec.cpp" />
+    <ClCompile Include="..\src\environment\application_directory.cpp" />
+    <ClCompile Include="..\src\environment\data_reader.cpp" />
+    <ClCompile Include="..\src\environment\data_writer.cpp" />
+    <ClCompile Include="..\src\environment\directory.cpp" />
+    <ClCompile Include="..\src\environment\file.cpp" />
+    <ClCompile Include="..\src\environment\file_seek.cpp" />
+    <ClCompile Include="..\src\environment\server_environment.cpp" />
+    <ClCompile Include="..\src\environment\strutils.cpp" />
+    <ClCompile Include="..\src\environment\system_config.cpp" />
+    <ClCompile Include="..\src\environment\utils.cpp" />
+    <ClCompile Include="..\src\environment\wmdf_file.cpp" />
+    <ClCompile Include="..\src\commandline\console_command.cpp" />
+    <ClCompile Include="..\src\commandline\console_command_group.cpp" />
+    <ClCompile Include="..\src\commandline\console_command_manager.cpp" />
+    <ClCompile Include="..\src\commandline\console_command_parser.cpp" />
+    <ClCompile Include="..\src\commandline\console_command_printer.cpp" />
+    <ClCompile Include="..\src\commandline\console_command_processor.cpp" />
+    <ClCompile Include="..\src\commandline\system_console_command_factory.cpp" />
+    <ClCompile Include="..\src\commandline\test_command.cpp" />
+    <ClCompile Include="..\src\commandline\help_command.cpp" />
+    <ClCompile Include="..\src\commandline\logger_command.cpp" />
+    <ClCompile Include="..\src\commandline\monitor_command.cpp" />
+    <ClCompile Include="..\src\commandline\net_command.cpp" />
+    <ClCompile Include="..\src\commandline\replay_command.cpp" />
+    <ClCompile Include="..\src\commandline\user_command.cpp" />
+    <ClCompile Include="..\src\monitor\client_status_collector.cpp" />
+    <ClCompile Include="..\src\monitor\event_listener.cpp" />
+    <ClCompile Include="..\src\monitor\event_pool.cpp" />
+    <ClCompile Include="..\src\monitor\feed_event.cpp" />
+    <ClCompile Include="..\src\monitor\logger.cpp" />
+    <ClCompile Include="..\src\monitor\monitor_adapter.cpp" />
+    <ClCompile Include="..\src\monitor\monitor_state.cpp" />
+    <ClCompile Include="..\src\monitor\product_adapter_listener.cpp" />
+    <ClCompile Include="..\src\monitor\productdata_logger.cpp" />
+    <ClCompile Include="..\src\monitor\transfer_status_collector.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec.cpp" />
+    <ClCompile Include="..\src\protocol\codec_buffer.cpp" />
+    <ClCompile Include="..\src\protocol\fast_message_codec.cpp" />
+    <ClCompile Include="..\src\protocol\market_header_codec.cpp" />
+    <ClCompile Include="..\src\protocol\mdf_message.cpp" />
+    <ClCompile Include="..\src\protocol\protocol_description.cpp" />
+    <ClCompile Include="..\src\protocol\protocol_processor.cpp" />
+    <ClCompile Include="..\src\protocol\protocol_processor_center.cpp" />
+    <ClCompile Include="..\src\protocol\protocol_processor_controller.cpp" />
+    <ClCompile Include="..\src\protocol\protocol_processor_factory.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_heart_beat.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_login_request.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_login_response.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_logout.cpp" />
+    <ClCompile Include="..\src\protocol\system_header_codec.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_auction_price.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_order_queue.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_overview.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_shl2_trans.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_auction_price.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_order_queue.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_overview.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shl2_trans.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_szl2_orders.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_szl2_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_szl2_orders.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_szl2_trans.cpp" />
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_order_queue.cpp" />
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_orders.cpp" />
+    <ClCompile Include="..\src\protocol\stop_bit_codec_szl2_trans.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_cffel1_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_cffel2_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_cffel1_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_cffel2_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_shszl1_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shszl1_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_client_status.cpp" />
+    <ClCompile Include="..\src\protocol\binary_codec_transfer_stat.cpp" />
+    <ClCompile Include="..\src\protocol\monitor_header_codec.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_dcel1_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_shfel1_market_data.cpp" />
+    <ClCompile Include="..\src\protocol\fast_codec_czcel1_market_data.cpp" />
+    <ClCompile Include="..\..\lib\serialization\clonable.cpp" />
+    <ClCompile Include="..\..\lib\serialization\memento.cpp" />
+    <ClCompile Include="..\..\lib\serialization\memento_reader.cpp" />
+    <ClCompile Include="..\..\lib\serialization\memento_writer.cpp" />
+    <ClCompile Include="..\..\lib\serialization\persistable.cpp" />
+    <ClCompile Include="..\..\lib\serialization\serializer.cpp" />
+    <ClCompile Include="..\src\session\dispatching_center.cpp" />
+    <ClCompile Include="..\src\session\feed_client.cpp" />
+    <ClCompile Include="..\src\session\feed_connection.cpp" />
+    <ClCompile Include="..\src\session\feed_scheduler.cpp" />
+    <ClCompile Include="..\src\session\feed_server.cpp" />
+    <ClCompile Include="..\src\session\login_proxy.cpp" />
+    <ClCompile Include="..\src\session\message_publisher.cpp" />
+    <ClCompile Include="..\src\session\subscriber.cpp" />
+    <ClCompile Include="..\src\session\subscriber_group.cpp" />
+    <ClCompile Include="..\src\session\subscriber_manager.cpp" />
+    <ClCompile Include="..\src\session\system_message_handler.cpp" />
+    <ClCompile Include="..\src\session\system_message_processor.cpp" />
+    <ClCompile Include="..\src\session\system_message_processor_center.cpp" />
+    <ClCompile Include="..\src\session\system_message_processor_factory.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinystr.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinyxml.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\lib\tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="..\src\usermanager\authenticator.cpp" />
+    <ClCompile Include="..\src\usermanager\authorized_product.cpp" />
+    <ClCompile Include="..\src\usermanager\default_authenticator.cpp" />
+    <ClCompile Include="..\src\usermanager\user.cpp" />
+    <ClCompile Include="..\src\usermanager\user_manager.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\client.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\client_impl.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\conn_manager.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\connection.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\message_factory.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\net_module.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\server.cpp" />
+    <ClCompile Include="..\..\lib\netmodule\server_impl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\adapter\stdafx.h" />
+    <ClInclude Include="..\src\adapter\targetver.h" />
+    <ClInclude Include="..\src\product\feed_product_replayer.h" />
+    <ClInclude Include="..\src\product\message_descripter.h" />
+    <ClInclude Include="..\src\product\product_adapter_factory.h" />
+    <ClInclude Include="..\src\product\product_descripter.h" />
+    <ClInclude Include="..\src\product\product_manager.h" />
+    <ClInclude Include="..\src\product\product_source.h" />
+    <ClInclude Include="..\src\product\product_source_manager.h" />
+    <ClInclude Include="..\src\product\rawdata_product_replayer.h" />
+    <ClInclude Include="..\src\product\replay_adapter.h" />
+    <ClInclude Include="..\src\product\version_descripter.h" />
+    <ClInclude Include="..\src\product\adapter\cffe_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\czce_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\shfe_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\dce_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\fx_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\relay_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\simulator_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\simulator_utils.h" />
+    <ClInclude Include="..\src\product\adapter\sseszse_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\ssel1_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\ssel2_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\szsel1_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\szsel2_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\rawdata_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\rawdata_manager.h" />
+    <ClInclude Include="..\src\product\adapter\rawdata_ssel2_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\adapter_guard.h" />
+    <ClInclude Include="..\src\product\adapter\iproduct_adapter.h" />
+    <ClInclude Include="..\src\product\adapter\product_adapter.h" />
+    <ClInclude Include="..\src\product\decoder\dataDecoder.h" />
+    <ClInclude Include="..\src\product\decoder\index_transfer.h" />
+    <ClInclude Include="..\src\product\decoder\indexBase.h" />
+    <ClInclude Include="..\src\product\decoder\indicatorDefs.h" />
+    <ClInclude Include="..\src\product\decoder\l2marketsnapshotcontainer.h" />
+    <ClInclude Include="..\src\product\decoder\l2marketsnapshotsender.h" />
+    <ClInclude Include="..\src\product\decoder\packetDecoder.h" />
+    <ClInclude Include="..\src\product\decoder\securityContainer.h" />
+    <ClInclude Include="..\src\product\decoder\securityIndex.h" />
+    <ClInclude Include="..\src\product\decoder\utilsString.h" />
+    <ClInclude Include="..\src\product\decoder\windCodeCodec.h" />
+    <ClInclude Include="..\..\lib\zlib\include\zconf.h" />
+    <ClInclude Include="..\..\lib\zlib\include\zlib.h" />
+    <ClInclude Include="..\src\include\compiler_define.h" />
+    <ClInclude Include="..\src\include\date_time.h" />
+    <ClInclude Include="..\src\include\time.h" />
+    <ClInclude Include="..\src\include\wmdf_api.h" />
+    <ClInclude Include="..\src\include\wmdf_structs.h" />
+    <ClInclude Include="..\src\environment\application_directory.h" />
+    <ClInclude Include="..\src\environment\atomic_counter.h" />
+    <ClInclude Include="..\src\environment\atomicops.h" />
+    <ClInclude Include="..\src\environment\data_reader.h" />
+    <ClInclude Include="..\src\environment\data_writer.h" />
+    <ClInclude Include="..\src\environment\directory.h" />
+    <ClInclude Include="..\src\environment\file.h" />
+    <ClInclude Include="..\src\environment\file_seek.h" />
+    <ClInclude Include="..\src\environment\server_environment.h" />
+    <ClInclude Include="..\src\environment\splitter.h" />
+    <ClInclude Include="..\src\environment\strutils.h" />
+    <ClInclude Include="..\src\environment\system_config.h" />
+    <ClInclude Include="..\src\environment\utils.h" />
+    <ClInclude Include="..\src\environment\wmdf_file.h" />
+    <ClInclude Include="..\src\commandline\console_command.h" />
+    <ClInclude Include="..\src\commandline\console_command_define.h" />
+    <ClInclude Include="..\src\commandline\console_command_group.h" />
+    <ClInclude Include="..\src\commandline\console_command_manager.h" />
+    <ClInclude Include="..\src\commandline\console_command_parser.h" />
+    <ClInclude Include="..\src\commandline\console_command_printer.h" />
+    <ClInclude Include="..\src\commandline\console_command_processor.h" />
+    <ClInclude Include="..\src\commandline\system_console_command_factory.h" />
+    <ClInclude Include="..\src\commandline\test_command.h" />
+    <ClInclude Include="..\src\commandline\help_command.h" />
+    <ClInclude Include="..\src\commandline\logger_command.h" />
+    <ClInclude Include="..\src\commandline\monitor_command.h" />
+    <ClInclude Include="..\src\commandline\net_command.h" />
+    <ClInclude Include="..\src\commandline\replay_command.h" />
+    <ClInclude Include="..\src\commandline\user_command.h" />
+    <ClInclude Include="..\src\monitor\client_status_collector.h" />
+    <ClInclude Include="..\src\monitor\event_listener.h" />
+    <ClInclude Include="..\src\monitor\event_pool.h" />
+    <ClInclude Include="..\src\monitor\feed_event.h" />
+    <ClInclude Include="..\src\monitor\logger.h" />
+    <ClInclude Include="..\src\monitor\monitor_adapter.h" />
+    <ClInclude Include="..\src\monitor\monitor_state.h" />
+    <ClInclude Include="..\src\monitor\product_adapter_listener.h" />
+    <ClInclude Include="..\src\monitor\productdata_logger.h" />
+    <ClInclude Include="..\src\monitor\transfer_status_collector.h" />
+    <ClInclude Include="..\src\protocol\binary_codec.h" />
+    <ClInclude Include="..\src\protocol\binary_message_codec.h" />
+    <ClInclude Include="..\src\protocol\codec_buffer.h" />
+    <ClInclude Include="..\src\protocol\fast_codec.h" />
+    <ClInclude Include="..\src\protocol\fast_message_codec.h" />
+    <ClInclude Include="..\src\protocol\header_codec.h" />
+    <ClInclude Include="..\src\protocol\market_header_codec.h" />
+    <ClInclude Include="..\src\protocol\mdf_message.h" />
+    <ClInclude Include="..\src\protocol\message_codec.h" />
+    <ClInclude Include="..\src\protocol\protocol_description.h" />
+    <ClInclude Include="..\src\protocol\protocol_processor.h" />
+    <ClInclude Include="..\src\protocol\protocol_processor_center.h" />
+    <ClInclude Include="..\src\protocol\protocol_processor_controller.h" />
+    <ClInclude Include="..\src\protocol\protocol_processor_factory.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_heart_beat.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_login_request.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_login_response.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_logout.h" />
+    <ClInclude Include="..\src\protocol\system_header_codec.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_auction_price.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_market_data.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_order_queue.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_overview.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_shl2_trans.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_auction_price.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_order_queue.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_overview.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shl2_trans.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_szl2_orders.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_szl2_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_szl2_orders.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_szl2_trans.h" />
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_market_data.h" />
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_order_queue.h" />
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_orders.h" />
+    <ClInclude Include="..\src\protocol\stop_bit_codec_szl2_trans.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_cffel1_market_data.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_cffel2_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_cffel1_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_cffel2_market_data.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_shszl1_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shszl1_market_data.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_client_status.h" />
+    <ClInclude Include="..\src\protocol\binary_codec_transfer_stat.h" />
+    <ClInclude Include="..\src\protocol\monitor_header_codec.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_dcel1_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_shfel1_market_data.h" />
+    <ClInclude Include="..\src\protocol\fast_codec_czcel1_market_data.h" />
+    <ClInclude Include="..\..\lib\serialization\clonable.h" />
+    <ClInclude Include="..\..\lib\serialization\memento.h" />
+    <ClInclude Include="..\..\lib\serialization\memento_reader.h" />
+    <ClInclude Include="..\..\lib\serialization\memento_writer.h" />
+    <ClInclude Include="..\..\lib\serialization\persistable.h" />
+    <ClInclude Include="..\..\lib\serialization\serializer.h" />
+    <ClInclude Include="..\src\session\dispatching_center.h" />
+    <ClInclude Include="..\src\session\feed_client.h" />
+    <ClInclude Include="..\src\session\feed_connection.h" />
+    <ClInclude Include="..\src\session\feed_scheduler.h" />
+    <ClInclude Include="..\src\session\feed_server.h" />
+    <ClInclude Include="..\src\session\login_proxy.h" />
+    <ClInclude Include="..\src\session\message_publisher.h" />
+    <ClInclude Include="..\src\session\subscriber.h" />
+    <ClInclude Include="..\src\session\subscriber_group.h" />
+    <ClInclude Include="..\src\session\subscriber_manager.h" />
+    <ClInclude Include="..\src\session\system_message_handler.h" />
+    <ClInclude Include="..\src\session\system_message_processor.h" />
+    <ClInclude Include="..\src\session\system_message_processor_center.h" />
+    <ClInclude Include="..\src\session\system_message_processor_factory.h" />
+    <ClInclude Include="..\..\lib\tinyxml\tinystr.h" />
+    <ClInclude Include="..\..\lib\tinyxml\tinyxml.h" />
+    <ClInclude Include="..\src\usermanager\authenticator.h" />
+    <ClInclude Include="..\src\usermanager\authorized_product.h" />
+    <ClInclude Include="..\src\usermanager\default_authenticator.h" />
+    <ClInclude Include="..\src\usermanager\user.h" />
+    <ClInclude Include="..\src\usermanager\user_manager.h" />
+    <ClInclude Include="..\..\lib\netmodule\atomic_ptr.h" />
+    <ClInclude Include="..\..\lib\netmodule\client.h" />
+    <ClInclude Include="..\..\lib\netmodule\client_impl.h" />
+    <ClInclude Include="..\..\lib\netmodule\conn_manager.h" />
+    <ClInclude Include="..\..\lib\netmodule\connection.h" />
+    <ClInclude Include="..\..\lib\netmodule\error.h" />
+    <ClInclude Include="..\..\lib\netmodule\event_factory.h" />
+    <ClInclude Include="..\..\lib\netmodule\io_buffer.h" />
+    <ClInclude Include="..\..\lib\netmodule\lock_free_queue.h" />
+    <ClInclude Include="..\..\lib\netmodule\message_factory.h" />
+    <ClInclude Include="..\..\lib\netmodule\message_id_def.h" />
+    <ClInclude Include="..\..\lib\netmodule\net_module.h" />
+    <ClInclude Include="..\..\lib\netmodule\pipe.h" />
+    <ClInclude Include="..\..\lib\netmodule\queue.h" />
+    <ClInclude Include="..\..\lib\netmodule\relay_connection.h" />
+    <ClInclude Include="..\..\lib\netmodule\server.h" />
+    <ClInclude Include="..\..\lib\netmodule\server_impl.h" />
+    <ClInclude Include="..\..\lib\netmodule\service.h" />
+    <ClInclude Include="..\..\lib\netmodule\stdint.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\protocol\wind_fast_template.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

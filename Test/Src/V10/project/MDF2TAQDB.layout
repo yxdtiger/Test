@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release_x64" />
+	<File name="../../lib/serialization/memento.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2468" topLine="115" />
+	</File>
+	<File name="../src/include/date_time.h" open="0" top="0" tabpos="2">
+		<Cursor position="5428" topLine="138" />
+	</File>
+	<File name="../src/include/wmdf_structs.h" open="0" top="0" tabpos="3">
+		<Cursor position="6800" topLine="78" />
+	</File>
+	<File name="../src/mdf2taqdb/feed/gava_feed.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="51634" topLine="1203" />
+	</File>
+	<File name="../src/mdf2taqdb/feed/main.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="730" topLine="5" />
+	</File>
+	<File name="../src/mdf2taqdb/feed/market_snapshot_container.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="27234" topLine="901" />
+	</File>
+	<File name="../src/mdf2taqdb/include/lclientapi.h" open="1" top="0" tabpos="1">
+		<Cursor position="14480" topLine="434" />
+	</File>
+</CodeBlocks_layout_file>

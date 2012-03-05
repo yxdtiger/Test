@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates version="1.12" xmlns="http://www.fixprotocol.org/ns/template-definition" templateNs="http://www.fixprotocol.org/ns/templates/sample" ns="http://www.fixprotocol.org/ns/fix"> 
+
+<template name="SHSZL1MarketData" id="1001">
+      <string name="MessageType" id="35"><constant value="UA1001"/></string>
+      <int32 name="TradeDate" id="9001"><copy/></int32>
+      <int32 name="DataTimeStamp" id="10178"><copy/></int32>
+      <string name="WindCode" id="48"/>
+      <int32 name="PreClosePx" id="140" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="OpenPx" id="10018" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="HighPx" id="332" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="LowPx" id="333" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="LastPx" id="31" presence="optional" decimalPlaces="3"><default/></int32>
+      <int64 name="TotalVolume" id="387" presence="optional"><default/></int64>
+      <int64 name="TotalValue" id="8504" presence="optional" decimalPlaces="5"><default/></int64>
+      <int64 name="DeltaVolume" id="9002" presence="optional"><default/></int64>
+      <int64 name="DeltaAmount" id="9003" presence="optional" decimalPlaces="5"><default/></int64>
+      <sequence name="BidPriceLevel">
+            <length name="NoBidPriceLevel" id="10068" presence="optional"/>
+            <int64 name="BidSize" id="134"/>
+            <int32 name="BidPx" id="132" decimalPlaces="3"/>
+      </sequence>
+      <sequence name="OfferPriceLevel">
+          <length name="NoOfferPriceLevel" id="10069" presence="optional"/>
+          <int64 name="OfferSize" id="135"/>
+          <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+      </sequence>
+</template>
+<template name="SHL2MarketData" id="1201">
+      <string name="MessageType" id="35"><constant value="W1201"/></string>
+      <int32 name="TradeDate" id="9001"><copy/></int32>
+      <int32 name="DataTimeStamp" id="10178"><copy/></int32>
+      <string name="WindCode" id="48"/>
+      <int32 name="PreClosePx" id="140" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="OpenPx" id="10018" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="HighPx" id="332" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="LowPx" id="333" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="LastPx" id="31" presence="optional" decimalPlaces="3"><default/></int32>
+      <int64 name="TotalVolume" id="387" presence="optional"><default/></int64>
+      <int64 name="TotalValue" id="8504" presence="optional" decimalPlaces="5"><default/></int64>
+      <int32 name="WeightedAvgBidPx" id="10039" presence="optional" decimalPlaces="3"><default/></int32>
+      <int64 name="TotalBidQty" id="10043" presence="optional" decimalPlaces="3"><default/></int64>
+      <int32 name="WeightedAvgOfferPx" id="10040" presence="optional" decimalPlaces="3"><default/></int32>
+      <int64 name="TotalOfferQty" id="10044" presence="optional" decimalPlaces="3"><default/></int64>
+      <int32 name="IOPV" id="10057" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="YieldToMaturity" id="10060" presence="optional" decimalPlaces="4"><default/></int32>
+      <sequence name="BidPriceLevel">
+            <length name="NoBidPriceLevel" id="10068" presence="optional"/>
+            <int64 name="BidSize" id="134"/>
+            <int32 name="BidPx" id="132" decimalPlaces="3"/>
+      </sequence>
+      <sequence name="OfferPriceLevel">
+          <length name="NoOfferPriceLevel" id="10069" presence="optional"/>
+          <int64 name="OfferSize" id="135"/>
+          <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+      </sequence>
+</template>
+<template name="SHTransaction" id="1202">
+      <string name="MessageType" id="35"><constant value="W1202"/></string>
+      <int32 name="TradeIndex" id="10011"><increment/></int32> 
+      <int32 name="TradeChannel" id="10115"><copy/></int32>
+      <string name="WindCode" id="48" presence="optional"><copy/></string>
+      <int32 name="TradeTime" id="10013" presence="optional"><copy/></int32>
+      <int32 name="TradePrice" id="10014" presence="optional" decimalPlaces="3"><default/></int32>
+      <int64 name="TradeQty" id="10015" presence="optional" ><default/></int64>
+      <int64 name="TradeMoney" id="10016" presence="optional" ><default/></int64>
+</template>
+<template name="SHOrderQueue" id="1203">
+        <string name="MessageType" id="35"><constant value="UA1111"/></string>
+        <int32 name="DataTimestamp" id="10178"><copy/></int32>
+        <int32 name="Side" id="54"><copy/></int32>
+        <string name="WindCode" id="48"></string>
+        <int32 name="ImageStatus" id="10146"><copy/></int32>
+        <sequence name="PriceLevel">
+            <length name="NoPriceLevel" id="10063" presence="optional"/>
+            <int32 name="PriceLeveOperator" id="10147" presence="optional"><default/></int32>
+            <int32 name="Price" id="44" decimalPlaces="3"/>
+            <int32 name="NumOrders" id="10067"/>
+            <sequence name="NoOrders">
+                <length name="Orders" id="73" presence="optional"/>
+                <int32 name="OrderQueueOperator" id="10148" presence="optional"><default/></int32>
+                <int32 name="OrderQueueOperatorEntryID" id="10149" presence="optional"><default/></int32>
+                <int32 name="OrderQty" id="38" presence="optional"><default/></int32>
+            </sequence>
+        </sequence>
+</template>
+<template name="SZL2MarketData" id="1301">
+      <string name="MessageType" id="35"><constant value="W1201"/></string>
+      <int32 name="TradeDate" id="9001"><copy/></int32>
+      <int32 name="DataTimeStamp" id="10178"><copy/></int32>
+      <string name="WindCode" id="48"/>
+      <int32 name="PreClosePx" id="140" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="OpenPx" id="10018" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="HighPx" id="332" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="LowPx" id="333" presence="optional" decimalPlaces="3"><default/></int32>
+      <int32 name="LastPx" id="31" presence="optional" decimalPlaces="3"><default/></int32>
+      <int64 name="TotalVolume" id="387" presence="optional"><default/></int64>
+      <int64 name="TotalAmount" id="8504" presence="optional" decimalPlaces="5"><default/></int64>
+      <int64 name="TransCount" id="9013" presence="optional"><default/></int64>
+      <int64 name="TradePhaseCode" id="9014" presence="optional"><default/></int64>
+      <int64 name="SecurityPreName" id="9015" presence="optional"><default/></int64>
+      <int32 name="IOPV" id="10057" presence="optional" decimalPlaces="3"><default/></int32>
+      <sequence name="BidPriceLevel">
+            <length name="NoBidPriceLevel" id="10068" presence="optional"/>
+            <int64 name="BidSize" id="134"/>
+            <int32 name="BidPx" id="132" decimalPlaces="3"/>
+      </sequence>
+      <sequence name="OfferPriceLevel">
+          <length name="NoOfferPriceLevel" id="10069" presence="optional"/>
+          <int64 name="OfferSize" id="135"/>
+          <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+      </sequence>
+</template>
+<template name="SZTransaction" id="1302">
+      <string name="MessageType" id="35"><constant value="W1302"/></string>
+       <int32 name="Seqno" id="9009"><copy/></int32> 
+      <int32 name="Recno" id="9010"><increment/></int32>
+      <string name="WindCode" id="48"</string>      
+       <int32 name="Price" id="10014" decimalPlaces="3">></int32>
+      <int64 name="TradeQty" id="10015" </int64>
+      <string name="OrderKind" id="9011" ></string>
+      <string name="FunctionCode" id="9012"</string>
+      <int32 name="DataTimeStamp" id="10178"><delta></int32>
+</template>
+<template name="SZOrders" id="1304">
+      <string name="MessageType" id="35"><constant value="W1304"/></string>
+      <int32 name="Seqno" id="9009"><copy/></int32> 
+      <int32 name="Recno" id="9010"><increment/></int32>
+      <string name="WindCode" id="48"</string>
+      <int32 name="OrderPrice" id="10014" decimalPlaces="3">></int32>
+      <int64 name="OrderQty" id="10015" </int64>
+      <string name="OrderKind" id="9011" ></string>
+      <string name="FunctionCode" id="9012"</string>
+      <int32 name="DataTimeStamp" id="10178"><delta></int32>
+</template>
+<template name="CFFEL1MarketData" id="2001">
+        <string name="MessageType" id="35"><constant value="UA2001"/></string>
+        <int32 name="TradeDate" id="9001"><copy/></int32>
+        <int32 name="DataTimestamp" id="10178"><copy/></int>
+        <string name="WindCode" id="48"></string>
+        <int32 name="PreClosePx" id="140" presence="optional" decimalPlaces="3"><default/></int32>
+	      <int32 name="OpenPx" id="10018" presence="optional" decimalPlaces="3"><default/></int32>
+	      <int32 name="HighPx" id="332" presence="optional" decimalPlaces="3"><default/></int32>
+	      <int32 name="LowPx" id="333" presence="optional" decimalPlaces="3"><default/></int32>
+	      <int32 name="LastPx" id="31" presence="optional" decimalPlaces="3"><default/></int32>
+	      <int64 name="TotalVolume" id="387" presence="optional"><default/></int64>
+      	<int64 name="TotalValue" id="8504" presence="optional" decimalPlaces="5"><default/></int64>
+      	<int64 name="BidSize" id="134"/>
+        <int32 name="BidPx" id="132" decimalPlaces="3"/>
+        <int64 name="OfferSize" id="135"/>
+        <int32 name="OfferPx" id="133" decimalPlaces="3"/>
+        <int32 name="PrevSettle" id="9004" decimalPlaces="3"><default/></int32>
+        <int64 name="Position" id="9005"><default/></int32>       
+        <int64 name="PrevPosition" id="9006"><default/></int32>
+        <int32 name="HighLimit" id="9007" decimalPlaces="3"><default/></int32>
+        <int32 name="LowLimit" id="9008" decimalPlaces="3"><default/></int32>
+    </template>
+</templates>
